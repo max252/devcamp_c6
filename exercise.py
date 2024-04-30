@@ -9,7 +9,11 @@ class User:
     def get_username(self):
         return self.__username
 
+    def get_password(self):
+        return self.__password
+
 
 user = User("max", "superpassword")
 
 print(user.get_username())
+print(user.get_password())

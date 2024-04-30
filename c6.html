@@ -1,0 +1,4296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.2.1 (Linux)"/>
+	<meta name="created" content="2024-04-25T08:45:03.669728512"/>
+	<meta name="changed" content="2024-04-27T12:43:51.905832461"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Sans", sans-serif; font-size: 18pt; font-weight: bold }
+		h1.cjk { font-family: "Source Han Sans CN"; font-size: 18pt; font-weight: bold }
+		h1.ctl { font-family: "Noto Sans Devanagari"; font-size: 18pt; font-weight: bold }
+		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Sans", sans-serif; font-size: 16pt; font-weight: bold }
+		h2.cjk { font-family: "Source Han Sans CN"; font-size: 16pt; font-weight: bold }
+		h2.ctl { font-family: "Noto Sans Devanagari"; font-size: 16pt; font-weight: bold }
+		h3 { margin-top: 0.25cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Sans", sans-serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "Source Han Sans CN"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Noto Sans Devanagari"; font-size: 14pt; font-weight: bold }
+		h4 { margin-top: 0.21cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
+		h4.western { font-family: "Liberation Sans", sans-serif; font-size: 13pt; font-style: italic; font-weight: bold }
+		h4.cjk { font-family: "Source Han Sans CN"; font-size: 13pt; font-style: italic; font-weight: bold }
+		h4.ctl { font-family: "Noto Sans Devanagari"; font-size: 13pt; font-style: italic; font-weight: bold }
+	</style>
+</head>
+<body lang="uk-UA" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
+<font size="6" style="font-size: 22pt">¿Para qué usamos Clases en
+Python?</font></h1>
+<h1 class="western"><font size="6" style="font-size: 22pt">¿Qué
+método se ejecuta automáticamente cuando se crea una instancia de
+una clase?</font></h1>
+<h2 class="western"></h2>
+<h2 class="western">Conceptos básicos de programación orientada a
+objetos.</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La programación
+orientada a objetos (POO) es una metodología de desarrollo de
+software que se basa en el concepto de clase y objeto, mientras que
+el programa en sí se crea como una colección de objetos que
+interactúan entre sí y con el mundo exterior. Cada objeto es una
+instancia de alguna clase. Las clases forman jerarquías.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Hay tres &quot;pilares&quot;
+principales de la programación orientada a objetos: encapsulación,
+herencia y polimorfismo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Encapsulación</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Encapsular
+significa ocultar detalles de implementación, datos, etc. desde
+fuera. Por ejemplo, puede definir una clase de “refrigerador”,
+que contendrá los siguientes datos: fabricante, volumen, número de
+compartimentos de almacenamiento, consumo de energía, etc., y
+métodos: abrir/cerrar el refrigerador, encender/apagar, pero a al
+mismo tiempo implementa cómo el encendido y apagado directo no está
+disponible para el usuario de tu clase, lo que te permite cambiarlo
+sin temor a que esto pueda afectar el programa que usa la clase
+“refrigerador”. En este caso, la clase pasa a ser un nuevo tipo
+de datos dentro del programa desarrollado. Puedes crear variables de
+este nuevo tipo, estas variables se llaman objetos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Herencia</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La herencia se
+refiere a la capacidad de crear una nueva clase basada en una
+existente. La herencia implica una relación &quot;es&quot; entre la
+clase heredera y la clase padre. En este caso, la clase descendiente
+contendrá los mismos atributos y métodos que la clase base, pero
+puede (y debe) expandirse agregando nuevos métodos y atributos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Un ejemplo de una
+clase base que demuestra herencia es la clase “automóvil”, que
+tiene atributos: peso, potencia del motor, volumen del tanque de
+combustible y métodos: arranque y parada. Dicha clase puede tener un
+descendiente: &quot;camión&quot;, contendrá los mismos atributos y
+métodos que la clase &quot;automóvil&quot;, y propiedades
+adicionales: el número de ejes, la potencia del compresor, etc.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Polimorfismo</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El polimorfismo
+permite que los objetos que tienen la misma interfaz sean tratados
+por igual, independientemente de la implementación interna del
+objeto. Por ejemplo, con un objeto de la clase “camión”, puedes
+realizar las mismas operaciones que con un objeto de la clase
+“coche”, porque el primero es heredero del segundo, mientras que
+la afirmación inversa no es cierta (al menos no siempre). En otras
+palabras, el polimorfismo implica diferentes implementaciones de
+métodos con los mismos nombres. Esto es muy útil al heredar, cuando
+en una clase descendiente puedes anular los métodos de la clase
+principal.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Clases en Python</h2>
+<h3 class="western"></h3>
+<h3 class="western">Creando clases y objetos</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La creación de una
+clase en Python comienza con la declaración de clase. Así será la
+clase mínima.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+C: </font>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   pass</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una clase consta de
+una declaración (la declaración de clase), un nombre de clase (en
+nuestro caso, el nombre C) y un cuerpo de clase que contiene
+atributos y métodos (nuestra clase mínima tiene solo una
+declaración de paso).</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Para crear un
+objeto de clase, debe utilizar la siguiente sintaxis:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">object_name
+= class_name()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Atributos de clase estáticos y dinámicos.</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Como se mencionó
+anteriormente, una clase puede contener atributos y métodos. Un
+atributo puede ser estático o dinámico (nivel de objeto de clase).
+El punto es que para trabajar con un atributo estático, no es
+necesario crear una instancia de la clase, pero para trabajar con un
+atributo dinámico, sí. Ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   default_color = &quot;green&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En la clase
+presentada anteriormente, el atributo <i><b>default_color</b></i> es
+un atributo estático y, como se mencionó anteriormente, se puede
+acceder a él sin crear un objeto de la clase <i><b>Rectangle</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Rectangle.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'green'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>width</b></i>
+y <i><b>height</b></i> son atributos dinámicos, se utilizó la
+palabra clave <i><b>self</b></i> al crearlos. Por ahora, délo por
+sentado; el <i><b>self</b></i> se analizará con más detalle a
+continuación. Para acceder a <i><b>width</b></i> y <i><b>height</b></i>,
+primero necesita crear un objeto de la clase <i><b>Rectangle</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si accedemos a él
+a través de la clase, obtendremos un error:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Rectangle.width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
+(most recent call last):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">AttributeError:
+type object 'Rectangle' has no attribute 'width'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Al mismo tiempo, si
+accede a un atributo estático a través de una instancia de clase,
+todo estará bien hasta que intente cambiarlo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Comprobemos
+nuevamente el valor del atributo <i><b>default_color</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Rectangle.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'green'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Asignémosle un
+nuevo valor:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Rectangle.default_color = &quot;red&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Rectangle.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Creemos dos objetos
+de la clase <i><b>Rectangle</b></i> y verifiquemos que su
+color_predeterminado sea el mismo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r1 = Rectangle(1,2)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r2 = Rectangle(10, 20)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r1.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r2.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si cambia el valor
+<i><b>default_color</b></i> a través del nombre de la clase
+<i><b>Rectangle</b></i>, entonces todo será como se esperaba: para
+los objetos <i><b>r1</b></i> y <i><b>r2</b></i> este valor cambiará,
+pero si lo cambia a través de una instancia de la clase, entonces un
+atributo con el mismo nombre. se creará para la instancia como
+estática y se perderá el acceso a esta última:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Cambie
+<i><b>default_color </b></i>a través de <i><b>r1</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r1.default_color = &quot;blue&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r1.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'blue'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En este caso, <i><b>r2</b></i>
+conserva el valor del atributo estático:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+r2.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Rectangle.default_color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En general,
+trabajar directamente con atributos no es una buena idea; es mejor
+utilizar propiedades para ello.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Métodos de clase</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Agreguemos un
+método a nuestra clase. Un método es una función dentro de una
+clase que realiza un trabajo específico.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los métodos pueden
+ser estáticos, de clase (el promedio entre estático y ordinario) y
+de nivel de clase (simplemente los llamaremos método). Se crea un
+método estático con el decorador @staticmethod, se crea un método
+de clase con el decorador <i><b>@classmethod</b></i>, se le pasa cls
+como primer argumento, se crea un método normal sin un decorador
+especial, se le pasa <i><b>self</b></i> como el primero argumento:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+MyClass:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @staticmethod</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def ex_static_method():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;static method&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @classmethod</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def ex_class_method(cls):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;class method&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def ex_method(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;method&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Se pueden llamar
+métodos estáticos y de clase sin crear una instancia de la clase;
+llamar a <i><b>ex_method() </b></i>requiere un objeto:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+MyClass.ex_static_method()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">static
+method</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+MyClass.ex_class_method()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+method</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+MyClass.ex_method()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
+(most recent call last):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">TypeError:
+ex_method() missing 1 required positional argument: 'self'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+m = MyClass()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+m.ex_method()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">method</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Constructor de clase e inicialización de
+instancia de clase.</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Python separa un
+constructor de clase y un método para inicializar una instancia de
+la clase. El constructor de la clase es el método <i><b>__new__(cls,
+*args, **kwargs)</b></i>. Para inicializar una instancia de clase, se
+utiliza el método <i><b>__init__(self)</b></i>. Al mismo tiempo,
+como habrás notado, <i><b>__new__</b></i> es un método de clase,
+pero <i><b>__init__ </b></i>no lo es. El método <i><b>__new__</b></i>
+rara vez se anula; la implementación del objeto de la clase base se
+usa con mayor frecuencia (consulte la sección Herencia), <i><b>__init__</b></i>,
+por el contrario, es una forma muy conveniente de configurar los
+parámetros de un objeto cuando se crea.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Creemos una
+implementación de la clase <i><b>Rectangle</b></i> con un
+constructor e inicializador modificados, a través del cual se
+establece el ancho y alto del rectángulo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __new__(cls, *args, **kwargs):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Hello from __new__&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return super().__new__(cls)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Hello from __init__&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Hello
+from __new__</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Hello
+from __init__</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">¿Qué es self?</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Hasta este punto,
+ya se ha familiarizado con la palabra clave <i><b>self</b></i>. <i><b>self</b></i>
+es una referencia a la instancia actual de la clase; en lenguajes
+como Java y C#, el análogo es la palabra clave <i><b>this</b></i>. A
+través de self accedes a los atributos y métodos de la clase dentro
+de él:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.width * self.height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En la
+implementación anterior, el método area accede a los atributos
+<i><b>width</b></i> y <i><b>height</b></i> para calcular el area. Si
+no se hubiera especificado self como primer parámetro, el programa
+se habría detenido con un error al intentar llamar a area.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Niveles de acceso a atributos y métodos</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si está
+familiarizado con los lenguajes de programación Java, C#, C++,
+probablemente ya se habrá preguntado: &quot;¿cómo gestionar el
+nivel de acceso?&quot; En los idiomas enumerados, puede indicar
+explícitamente para una variable que el acceso a ella desde fuera de
+la clase está prohibido mediante palabras clave (privada, protegida,
+etc.). Python no tiene tales capacidades y cualquiera puede acceder a
+los atributos y métodos de su clase si surge la necesidad. Este es
+un inconveniente importante de este lenguaje, porque... Se viola uno
+de los principios clave de la programación orientada a objetos: la
+encapsulación. Se considera de buena educación que para
+leer/cambiar un atributo se deben utilizar métodos especiales
+llamados getter/setter. Se pueden implementar, pero nada impedirá
+que se cambie el atributo directamente; Al mismo tiempo, existe un
+acuerdo de que un método o atributo que comienza con un guión bajo
+está oculto y no es necesario tocarlo fuera de la clase (aunque esto
+se puede hacer).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Hagamos los cambios
+apropiados a la clase <i><b>Rectangle</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self._width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self._height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def get_width(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self._width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def set_width(self, w):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self._width = w</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def get_height(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self._height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def set_height(self, h):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self._height = h</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self._width * self._height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El ejemplo anterior
+utiliza métodos especiales para acceder a <i><b>_width</b></i> y
+<i><b>_height</b></i>, pero no hay nada que le impida acceder a ellos
+(los atributos) directamente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.get_width()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect._width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si un atributo o
+método comienza con dos guiones bajos, entonces ya no podrás
+acceder a él directamente (de forma sencilla). Modifiquemos nuestra
+clase <i><b>Rectangle</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def get_width(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def set_width(self, w):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__width = w</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def get_height(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def set_height(self, h):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__height = h</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width * self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Intentar acceder a
+<i><b>__width</b></i> directamente provocará un error, solo
+necesitarás trabajar con <i><b>get_width()</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.__width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
+(most recent call last):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">AttributeError:
+'Rectangle' object has no attribute '__width'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.get_width()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Pero, de hecho,
+esto se puede hacer, solo que este atributo ahora se llama para uso
+externo: <i><b>_Rectangle__width</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect._Rectangle__width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect._Rectangle__width = 20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.get_width()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Propiedades</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una propiedad es un
+método de clase cuyo funcionamiento es similar al de un atributo.
+Para declarar un método como propiedad, debe utilizar el decorador
+<i><b>@property</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una ventaja
+importante de trabajar con propiedades es que puede validar los
+valores de entrada antes de asignarlos a atributos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Implementemos la
+clase <i><b>Rectangle</b></i> usando propiedades:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def width(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @width.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def width(self, w):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       if w &gt; 0:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           self.__width = w</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       else:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           raise ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def height(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @height.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def height(self, h):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       if h &gt; 0:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           self.__height = h</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       else:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           raise ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width * self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Ahora puedes
+trabajar con <i><b>width</b></i> y <i><b>height</b></i> como si
+fueran atributos:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	No solo puede leer,
+sino también establecer nuevos valores para las propiedades:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width = 50</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">50</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.height = 70</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">70</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si notó: en el
+&quot;settres&quot; de estas propiedades, se verifican los valores de
+entrada, si el valor es menor que cero, se generará una excepción
+<i><b>ValueError</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width = -10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
+(most recent call last):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+ File &quot;test.py&quot;, line 28, in width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   raise ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Herencia</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Al menos dos clases
+participan en la organización de la herencia: la clase padre y la
+clase hija. En este caso, la herencia múltiple es posible; en este
+caso, una clase descendiente puede tener varios padres. No todos los
+lenguajes de programación admiten la herencia múltiple, pero Python
+puede usarla. De forma predeterminada, todas las clases en Python son
+descendientes del objeto; no es necesario indicar este hecho
+explícitamente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Sintácticamente,
+crear una clase con su padre se ve así:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+class_name(parent_class_name_1, [parent_class_name_2,…,
+parent_class_name_n])</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Reelaboremos
+nuestro ejemplo para que incluya la herencia:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Figure:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, color):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__color = color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def color(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @color.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def color(self, c):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__color = c</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle(Figure): </font>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height, color):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       super().__init__(color)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def width(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @width.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def width(self, w):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       if w &gt; 0:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           self.__width = w</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       else:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           raise ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def height(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @height.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def height(self, h):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       if h &gt; 0:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           self.__height = h</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       else:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           raise ValueError </font>
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width * self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La clase principal
+es Figura, que cuando se inicializa toma el color de la figura y lo
+proporciona a través de propiedades. Rectángulo es una clase
+derivada de Figura. Presta atención a su método <i><b>__init__</b></i>:
+lo primero que hace es llamar al constructor (aunque esto no es del
+todo cierto, pero digámoslo así) de su clase padre:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">super().__init__(color)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	super es una
+palabra clave que se utiliza para hacer referencia a la clase
+principal.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Ahora, además de
+las ya conocidas propiedades de ancho y alto, un objeto de la clase
+<i><b>Rectangle</b></i> ahora tiene una propiedad de color:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20, &quot;green&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'green'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.color = &quot;red&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Polimorfismo</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Como ya se mencionó
+en la introducción, en el marco de la programación orientada a
+objetos, el polimorfismo generalmente se usa desde la posición de
+anular métodos de la clase base en la clase descendiente. La forma
+más sencilla de ver esto es con un ejemplo. Agreguemos el método
+<i><b>info()</b></i> a nuestra clase base, que imprime información
+resumida sobre un objeto de la clase Figura y anulemos este método
+en la clase <i><b>Rectangle</b></i>, agregándole datos adicionales:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Figure:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, color):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__color = color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def color(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__color</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @color.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def color(self, c):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__color = c</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def info(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+      print(&quot;Figure&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+      print(&quot;Color: &quot; + self.__color)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Rectangle(Figure):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, width, height, color):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       super().__init__(color)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__width = width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.__height = height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def width(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @width.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def width(self, w):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       if w &gt; 0:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           self.__width = w</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       else:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           raise ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @property</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def height(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   @height.setter</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def height(self, h):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       if h &gt; 0:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           self.__height = h</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       else:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+           raise ValueError</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def info(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Rectangle&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Color: &quot; + self.color)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Width: &quot; + str(self.width))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Height: &quot; + str(self.height))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Area: &quot; + str(self.area()))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.__width * self.__height</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Vamos a ver cómo
+funciona</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+fig = Figure(&quot;orange&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+fig.info()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Figure</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Color:
+orange</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect = Rectangle(10, 20, &quot;green&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+rect.info()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Rectangle</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Color:
+green</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Width:
+10</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Height:
+20</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Area:
+200</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Por tanto, la clase
+descendiente puede ampliar la funcionalidad de la clase padre.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h1 class="western"><br/>
+<br/>
+
+</h1>
+<h1 class="western" style="page-break-before: always"><font size="6" style="font-size: 22pt">¿Cuáles
+son los tres verbos de API?</font></h1>
+<h1 class="western"><font size="6" style="font-size: 22pt">¿Qué es
+una API?</font></h1>
+<h2 class="western">¿Qué es una API RESTful?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una <i><b>API</b></i>
+<i><b>RESTful</b></i> es una interfaz utilizada por dos sistemas
+informáticos para intercambiar información de forma segura a través
+de Internet. La mayoría de las aplicaciones empresariales deben
+interactuar con otras aplicaciones internas y de terceros para
+realizar diversas tareas. Por ejemplo, para generar nómina mensual,
+su sistema de contabilidad interno debe comunicarse con el sistema
+bancario de su cliente para automatizar la facturación e interactuar
+con la aplicación interna de tiempo y asistencia. Las <i><b>API</b></i>
+<i><b>RESTful</b></i> respaldan este intercambio de información
+porque siguen estándares seguros, confiables y eficientes para la
+interacción programática.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">¿Qué es una API?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una interfaz de
+programación de aplicaciones (<i><b>API</b></i>) define las reglas
+que se deben seguir para comunicarse con otros sistemas de software.
+Los desarrolladores implementan o crean <i><b>API</b></i> para
+permitir que otras aplicaciones interactúen mediante programación
+con sus aplicaciones. Por ejemplo, una aplicación de parte de horas
+contiene una <i><b>API</b></i> que solicita el nombre completo y el
+rango de fechas del empleado. Una vez recibida esta información, la
+interfaz procesa la hoja de horas del empleado internamente y
+devuelve la cantidad de horas trabajadas durante el período
+especificado.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	De esta forma, la
+<i><b>API</b></i> de red funciona como puerta de enlace entre
+clientes y recursos en Internet.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Clientela</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los clientes son
+usuarios que desean acceder a información en Internet. El cliente
+puede ser una persona o un sistema de software que utiliza la <i><b>API</b></i>.
+Por ejemplo, los desarrolladores pueden crear programas que accedan a
+datos meteorológicos desde un sistema meteorológico. También puede
+acceder a estos datos desde su navegador visitando un sitio web
+meteorológico.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Recursos</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los recursos son
+información que varias aplicaciones proporcionan a sus clientes. Los
+recursos pueden ser imágenes, videos, texto, números o cualquier
+tipo de datos. La computadora que proporciona recursos al cliente
+también se llama servidor. Las <i><b>API</b></i> permiten a las
+organizaciones compartir recursos y proporcionar servicios web al
+mismo tiempo que brindan seguridad, control y autenticación. Además,
+la <i><b>API</b></i> ayuda a determinar qué clientes pueden acceder
+a determinados recursos internos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">¿Qué es el REST?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>Representational
+State Transfer </b></i>(<i><b>REST</b></i>) ​​​​es una
+arquitectura de software que define las condiciones operativas de una
+<i><span style="text-decoration: none"><b>API</b></span></i>. <i><b>REST</b></i>
+se creó originalmente como una guía para gestionar interacciones en
+una red compleja como Internet. La arquitectura basada en <i><b>REST</b></i>
+se puede utilizar para admitir comunicaciones confiables y de alto
+rendimiento a escala. Puede implementarse y modificarse fácilmente,
+proporcionando transparencia y portabilidad multiplataforma a
+cualquier sistema <i><b>API</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los desarrolladores
+pueden crear <i><b>API</b></i> utilizando múltiples arquitecturas.
+Las <i><b>API</b></i> que siguen el estilo arquitectónico <i><b>REST</b></i>
+se denominan <i><b>API</b></i> <i><b>REST</b></i>. Los servicios web
+que implementan la arquitectura <i><b>REST</b></i> se denominan
+servicios web <i><b>RESTful</b></i>. Generalmente, el término <i><b>API</b></i>
+<i><b>RESTful</b></i> se refiere a <i><b>API</b></i> <i><b>RESTful</b></i>
+basadas en red. Sin embargo, <i><b>REST</b></i> <i><b>API</b></i> y
+<i><b>RESTful</b></i> <i><b>API</b></i> son términos
+intercambiables.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">A continuación se
+muestran algunos principios del estilo arquitectónico <i><b>REST</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Interfaz unificada</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una única interfaz
+es la base de diseño de cualquier servicio web <i><b>RESTful</b></i>.
+Esto indica que el servidor está transmitiendo información en un
+formato estándar. Un recurso formateado en <i><b>REST</b></i> se
+llama vista. Este formato puede diferir de la representación interna
+del recurso en la aplicación del servidor. Por ejemplo, un servidor
+puede almacenar datos como texto pero enviarlos en formato de
+presentación <i><b>HTML</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una única interfaz
+impone cuatro restricciones arquitectónicas:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Las consultas
+deben identificar recursos. Esto ocurre a través de un único
+identificador de recurso.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Los clientes
+tienen suficiente información en la vista de recursos para modificar
+o eliminar el recurso si lo desean. El servidor cumple esta condición
+enviando metadatos que describen con más detalle el recurso.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Los clientes
+reciben información sobre el procesamiento posterior de los envíos.
+El servidor implementa esto enviando mensajes descriptivos que
+contienen metadatos sobre cómo el cliente puede usarlos mejor.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Los clientes
+reciben información sobre todos los recursos relacionados necesarios
+para completar una tarea. El servidor implementa esto enviando
+hipervínculos en la vista para que los clientes puedan descubrir
+dinámicamente más recursos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Sin ahorro de estado</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En la arquitectura
+<i><b>REST</b></i>, la apatridia se refiere a un método de
+comunicación en el que el servidor ejecuta cada solicitud del
+cliente independientemente de todas las solicitudes anteriores. Los
+clientes pueden solicitar recursos en cualquier orden y cada
+solicitud se aísla de otras solicitudes o su estado no se guarda.
+Esta limitación de diseño de la <i><b>API</b></i> <i><b>REST</b></i>
+implica que el servidor puede comprender y ejecutar completamente la
+solicitud en todo momento.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Sistema multinivel</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En una arquitectura
+de sistema en capas, el cliente puede conectarse a otros
+intermediarios autorizados entre el cliente y el servidor y aún
+recibir respuestas del servidor. Los servidores también pueden
+reenviar solicitudes a otros servidores. Puede diseñar su servicio
+web <i><b>RESTful</b></i> para que se ejecute en múltiples
+servidores, con múltiples capas (seguridad, aplicación y lógica de
+negocios) trabajando juntas para satisfacer las solicitudes de los
+clientes. Estos niveles permanecen invisibles para el cliente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Capacidad de caché</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los servicios web
+<i><b>RESTful</b></i> admiten el almacenamiento en caché, que es el
+proceso de almacenar algunas respuestas en el cliente o corredor para
+reducir el tiempo de respuesta del servidor. Por ejemplo, visita un
+sitio web con imágenes genéricas de encabezado y pie de página en
+cada página. Cada vez que visita una nueva página de un sitio web,
+el servidor debe reenviar las mismas imágenes. Para evitar esto, el
+cliente almacena en caché o almacena estas imágenes después de la
+primera respuesta y luego usa las imágenes del caché. Los servicios
+web <i><b>RESTful</b></i> gestionan el almacenamiento en caché
+mediante respuestas <i><b>API</b></i> que se definen como
+almacenables en caché o no almacenables en caché.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Código bajo pedido</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En el estilo
+arquitectónico <i><b>REST</b></i>, los servidores pueden ampliar o
+personalizar temporalmente la funcionalidad del cliente pasando el
+código de software. Por ejemplo, cuando completa un formulario de
+registro en un sitio web, su navegador resalta inmediatamente
+cualquier error que cometa (como números de teléfono incorrectos).
+Esto sucede gracias al código enviado por el servidor.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">¿Cuáles son los beneficios de una API RESTful?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La API RESTful
+tiene las siguientes ventajas:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Escalabilidad</h3>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los sistemas que
+implementan la <i><b>API</b></i> <i><b>REST</b></i> pueden escalar de
+manera eficiente optimizando la interacción entre el servidor y el
+cliente a través de <i><b>REST</b></i>. La apatridia quita la carga
+al servidor: el servidor no necesita almacenar información sobre
+solicitudes anteriores de clientes. El buen funcionamiento del caché
+elimina parcial o completamente algunas interacciones entre el
+cliente y el servidor. Las funciones enumeradas son escalables y no
+limitan el ancho de banda, lo que puede provocar un rendimiento
+deficiente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Flexibilidad¿Qué es una API?</h3>
+<p><br/>
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los servicios web
+<i><b>RESTful</b></i> admiten la separación completa de cliente y
+servidor. Simplifican y separan los distintos componentes del backend
+para que cada parte pueda evolucionar de forma independiente. Los
+cambios de plataforma o tecnología en la aplicación del servidor no
+afectan la aplicación del cliente. La capacidad de superponer la
+funcionalidad de la aplicación aumenta aún más la flexibilidad.
+Por ejemplo, los desarrolladores pueden realizar cambios en la capa
+de la base de datos sin reescribir la lógica de la aplicación.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Independencia</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La <i><b>API REST</b></i>
+es independiente de la tecnología utilizada. Puede crear
+aplicaciones tanto de cliente como de servidor en diferentes
+lenguajes de programación sin afectar la estructura de la <i><b>API</b></i>.
+También es posible cambiar la tecnología subyacente en cualquier
+lado sin afectar el intercambio de datos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">¿Cómo funciona la API RESTful?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El principio básico
+de cómo funciona una <i><b>API RESTful</b></i> es el mismo que
+funciona en Internet. El cliente se comunica con el servidor mediante
+una API cuando requiere un recurso. Los desarrolladores describen el
+principio de uso de la API REST por parte del cliente en la
+documentación de la <i><b>API</b></i> de la aplicación del
+servidor. A continuación se detallan los pasos principales de una
+solicitud de <i><b>API REST</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- El cliente envía
+una solicitud al servidor. Según la documentación de la <i><b>API</b></i>,
+el cliente formatea la solicitud de una manera que el servidor pueda
+entender.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- El servidor
+autentica al cliente y confirma que está autorizado para realizar
+esta solicitud.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- El servidor recibe
+la solicitud y la procesa internamente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- El servidor
+devuelve una respuesta al cliente. La respuesta contiene información
+que le dice al cliente si la solicitud fue exitosa. La solicitud
+también incluye información solicitada por el cliente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">¿Qué es</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los detalles de
+solicitud y respuesta de una <i><b>API REST</b></i> pueden variar
+ligeramente según cómo los desarrolladores diseñen la <i><b>API</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">¿Qué contiene una solicitud de cliente API
+RESTful?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La <i><b>API
+RESTful</b></i> requiere que las solicitudes contengan los siguientes
+componentes básicos:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Identificador de recurso único</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El servidor asigna
+a cada recurso una <i><b>ID</b></i> de recurso única. En el caso de
+los servicios <i><b>REST</b></i>, el servidor identifica los recursos
+mediante un localizador uniforme de recursos (<i><b>URL</b></i>). <i><b>URL</b></i>
+especifica la ruta al recurso. Una <i><b>URL</b></i> es similar a la
+dirección del sitio web que ingresa en su navegador para visitar una
+página web. La <i><b>URL</b></i> también se denomina dirección de
+solicitud y le 
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">indica claramente al
+servidor lo que requiere el cliente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Método</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Normalmente, los
+desarrolladores implementan <i><b>API RESTful</b></i> utilizando el
+Protocolo de transferencia de hipertexto (<i><b>HTTP</b></i>). El
+método <span style="font-weight: normal">HTTP</span> le dice al
+servidor qué debe hacer con el recurso. A continuación se muestran
+cuatro métodos <span style="font-weight: normal">HTTP</span>
+comunes:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">GET</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los clientes
+utilizan <i><b>GET</b></i> para acceder a los recursos ubicados en el
+servidor en una <i><b>URL</b></i> específica. Pueden almacenar en
+caché las solicitudes <i><b>GET</b></i> y enviar parámetros en una
+solicitud de <i><b>API RESTful</b></i> para indicarle al servidor que
+filtre los datos aна русскомntes de enviarlos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">POST</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los clientes
+utilizan <i><b>POST</b></i> para enviar datos al servidor. Al
+hacerlo, incluyen representaciones de datos en la solicitud. Enviar
+la misma solicitud <i><b>POST</b></i> varias veces tiene el efecto
+secundario de crear el mismo recurso varias veces.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">PUT</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los clientes usan
+<i><b>PUT</b></i> para actualizar los recursos existentes en el
+servidor. A diferencia de <i><b>POST</b></i>, enviar la misma
+solicitud <i><b>PUT</b></i> varias veces produce el mismo resultado
+en un servicio web <i><b>RESTful</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">DELETE</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los clientes
+utilizan una solicitud <i><b>DELETE</b></i> para eliminar un recurso.
+Una solicitud <i><b>DELETE</b></i> puede cambiar el estado del
+servidor. Sin embargo, si el usuario no tiene la autenticación
+adecuada, la solicitud falla.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Encabezados HTTP</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los encabezados de
+solicitud son metadatos intercambiados entre el cliente y el
+servidor. Por ejemplo, el encabezado de la solicitud especifica el
+formato de la solicitud y la respuesta, proporciona información
+sobre el estado de la solicitud, etc.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Datos</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Las solicitudes de
+<i><b>API REST</b></i> pueden incluir datos para permitir que <i><b>POST</b></i>,
+<i><b>PUT</b></i> y otros métodos <i><b>HTTP</b></i> tengan éxito.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Opciones</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Las solicitudes de
+<i><b>API RESTful</b></i> pueden incluir parámetros que proporcionan
+al servidor información más detallada sobre las acciones
+requeridas. A continuación se muestran algunos tipos de parámetros:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Parámetros de
+ruta, que especifican los detalles de la <i><b>URL</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Parámetros de
+consulta que solicitan información adicional sobre el recurso.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Configuraciones de
+cookies que autentican rápidamente a los clientes.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">¿Qué son los métodos de autenticación de API
+RESTful?</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El servicio web
+<i><b>RESTful</b></i> debe autenticar las solicitudes para luego
+enviar una respuesta. La autenticación es el proceso de confirmar la
+identidad. Por ejemplo, puede utilizar una tarjeta de identificación
+o una licencia de conducir para verificar su identidad. De manera
+similar, los clientes de un servicio <i><b>RESTful</b></i> deben
+demostrar su identidad al servidor para establecer confianza.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La API RESTful
+admite cuatro métodos de autenticación comunes:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Autenticación HTTP</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>HTTP</b></i>
+define algunos esquemas de autenticación que se pueden utilizar al
+implementar una <i><b>API REST</b></i>. A continuación se muestran
+dos de estos diagramas:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Autenticación
+básica</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Con la
+autenticación básica, el cliente envía el nombre de usuario y la
+contraseña en el encabezado de la solicitud. Los codifica utilizando
+el método de codificación base64, que convierte el par de nombre de
+usuario y contraseña en un conjunto de 64 caracteres para una
+transmisión segura.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>Autenticación de
+portador</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La autenticación
+del portador es el proceso de otorgar control de acceso al portador
+de un token. Normalmente, un token de portador es una cadena cifrada
+de caracteres que genera el servidor en respuesta a una solicitud de
+inicio de sesión. El cliente envía un token en los encabezados de
+solicitud para acceder a los recursos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Claves API</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Las claves <i><b>API</b></i>
+son otra opción para la autenticación de <i><b>API REST</b></i>.
+Con este enfoque, el servidor genera un valor único y lo asigna al
+primer cliente. Cada vez que un cliente intenta acceder a los
+recursos, utiliza una clave <i><b>API</b></i> única para la
+verificación. Las claves <i><b>API</b></i> son menos seguras: dado
+que el cliente debe entregar la clave, es más probable que la roben.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">OAuth</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>OAuth</b></i>
+combina contraseñas y tokens para iniciar sesión de forma segura en
+cualquier sistema. El servidor primero solicita una contraseña y
+luego un token adicional para completar el proceso de autorización.
+Puede validar el token en cualquier momento y también después de un
+cierto período de tiempo según el alcance y el período de validez.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">¿Qué contiene la respuesta del servidor API
+RESTful?</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los principios <i><b>REST</b></i>
+requieren que la respuesta del servidor contenga los siguientes
+componentes:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Barra de estado</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La línea de estado
+contiene un código de estado de tres dígitos que indica el éxito o
+el fracaso de la solicitud. Por ejemplo, los códigos <i><b>2XX</b></i>
+indican éxito, mientras que los códigos <i><b>4XX</b></i> y <i><b>5XX</b></i>
+indican errores. Los códigos <i><b>3XX</b></i> indican una
+redirección de <i><b>URL</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	A continuación se
+muestran algunos códigos de estado comunes:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">200: respuesta
+general de éxito</p>
+<p style="line-height: 100%; margin-bottom: 0cm">201: respuesta de
+éxito POST</p>
+<p style="line-height: 100%; margin-bottom: 0cm">400: Solicitud
+incorrecta que el servidor no puede procesar</p>
+<p style="line-height: 100%; margin-bottom: 0cm">404: recurso no
+encontrado</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Mensaje de texto</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El cuerpo de la
+respuesta contiene una representación del recurso. El servidor
+selecciona un formato de presentación apropiado en función del
+contenido de los encabezados de la solicitud. Los clientes pueden
+solicitar información en formatos <i><b>XML</b></i> o <i><b>JSON</b></i>:
+estos definen un registro de texto plano de los datos. Por ejemplo,
+si un cliente solicita el nombre y la edad de una persona llamada
+John, el servidor devuelve una representación <i><b>JSON</b></i> en
+el siguiente formato:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'{&quot;name&quot;:&quot;John&quot;,
+&quot;age&quot;:30}'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h4 class="western">Encabezamientos</h4>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La respuesta
+también contiene encabezados o metadatos sobre la respuesta. Dan más
+contexto a la respuesta e incluyen información como el nombre del
+servidor, codificación, fecha y tipo de contenido.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h1 class="western"><br/>
+<br/>
+
+</h1>
+<h1 class="western" style="page-break-before: always">¿Es MongoDB
+una base de datos SQL o NoSQL?</h1>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>NoSQL</b></i>
+(“no solo SQL”) es un enfoque para el diseño de bases de datos
+que le permite almacenar y consultar datos fuera de las estructuras
+tradicionales utilizadas en las bases de datos relacionales. Fue
+creado principalmente para trabajar con datos no estructurados que se
+generan a partir de numerosas fuentes como documentos, audio, video,
+redes sociales, etc. Las bases de datos NoSQL son las más adecuadas
+para aplicaciones modernas donde los modelos de datos están
+evolucionando y la escalabilidad es importante. Esta base de datos ha
+ganado popularidad en los últimos años, ya que las empresas ahora
+tienen que lidiar con datos no estructurados más que nunca. Este
+modelo almacena datos de manera diferente a las tablas relacionales
+tradicionales, lo que permite almacenar datos relacionados en una
+única estructura de datos. Las bases de datos <i><b>NoSQL</b></i> se
+pueden dividir en cuatro categorías:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Almacenamiento de
+documento</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Bases de datos de
+valores clave</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Almacenamiento de
+columna ancha</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Bases de datos de
+gráficos</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Las bases de datos
+<i><b>NoSQL</b></i> se utilizaNoSQL (“no solo SQL”) es un enfoque
+para el diseño de bases de datos que le permite almacenar y
+consultar datos fuera de las estructuras tradicionales utilizadas en
+las bases de datos relacionales. Fue creado principalmente para
+trabajar con datos no estructurados que se generan a partir de
+numerosas fuentes como documentos, audio, video, redes sociales, etc.
+Las bases de datos <i><b>NoSQL</b></i> son las más adecuadas para
+aplicaciones modernas donde los modelos de datos están evolucionando
+y la escalabilidad es importante. Esta base de datos ha ganado
+popularidad en los últimos años, ya que las empresas ahora tienen
+que lidiar con datos no estructurados más que nunca. Este modelo
+almacena datos de manera diferente a las tablas relacionales
+tradicionales, lo que permite almacenar datos relacionados en una
+única estructura de datos. Las bases de datos <i><b>NoSQL</b></i> se
+pueden dividir en cuatro categorías:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Almacenamiento de
+documento</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Bases de datos de
+valores clave</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Almacenamiento de
+columna anchn a menudo en proyectos ágiles porque ofrecen modelos de
+datos flexibles. Esto permite a los desarrolladores centrarse en la
+lógica y los algoritmos empresariales en lugar de tener que lidiar
+con actualizaciones de esquemas. Si espera que el modelo de datos de
+su aplicación permanezca flexible para adaptarse a los cambios a lo
+largo del tiempo, entonces un diseño de base de datos NoSQL flexible
+puede adaptarse a sus propósitos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">MongoDB</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>MongoDB</b></i>
+es una base de datos de código abierto orientada a documentos
+publicada originalmente en febrero de 2009. Las bases de datos
+orientadas a documentos son muy diferentes de las bases de datos
+relacionales tradicionales. Almacenan toda la información de un
+objeto determinado en una instancia y cada objeto almacenado puede
+ser diferente de todos los demás. Esto elimina la necesidad de mapeo
+relacional de objetos y permite un diseño sin esquemas, lo que
+brinda a los desarrolladores de aplicaciones la capacidad de
+evolucionar rápidamente con un modelo de datos flexible. En lugar de
+adaptar una aplicación a los requisitos de un esquema, los
+desarrolladores crean la aplicación y luego sigue el esquema.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>MongoDB</b></i>
+es muy popular debido a su flexibilidad, facilidad de aprendizaje y
+bajo costo para comenzar. A los desarrolladores de aplicaciones les
+encanta <i><b>MongoDB</b></i> porque pueden cambiar el modelo de
+datos sobre la marcha y porque <i><b>MongoDB</b></i> utiliza
+documentos <i><b>JSON</b></i> para registrar datos. <i><b>JSON</b></i>
+es omnipresente y puede considerarse el formato de facto para
+transferir datos masivos entre aplicaciones web y puntos finales. Su
+diseño simple y su flexibilidad lo hacen fácil de leer y comprender
+y, en la mayoría de los casos, fácil de manipular en el lenguaje de
+programación de su elección.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Otra característica
+importante de <i><b>MongoDB</b></i> son sus funciones integradas de
+alta disponibilidad, como replicación, conjunto de réplicas y
+fragmentación. Es escalable horizontalmente, lo que le permite
+reducir su carga de trabajo y escalar su negocio con facilidad.
+Ofrece replicación utilizando su propio protocolo de consenso, que
+se basa en Raft, y puede distribuir datos entre fragmentos utilizando
+un enrutador de solicitudes llamado mongos. Puede utilizar
+ClusterControl para implementar fácilmente un conjunto de réplicas
+de <i><b>MongoDB</b></i> y configurar un grupo de fragmentos.</p>
+<h1 class="western"><br/>
+<br/>
+
+</h1>
+<h1 class="western" style="page-break-before: always">¿Qué es
+Postman?</h1>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>Postman</b></i>
+es un cliente <i><b>HTTP</b></i> para probar <i><b>API</b></i>. Los
+clientes <i><b>HTTP</b></i> prueban enviar solicitudes del cliente al
+servidor y recibir una respuesta del servidor.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>API</b></i>
+(Interfaz de programación de aplicaciones) es una interfaz para
+intercambiar datos desde un servidor entre dos aplicaciones o
+componentes de software. <i><b>Postman</b></i> ayuda a los
+evaluadores a diseñar diseños de <i><b>API</b></i> y crear
+servidores simulados (simuladores de operación de aplicaciones). Por
+ejemplo, con <i><b>Postman</b></i> puede probar cómo la <i><b>API</b></i>
+registra un nuevo usuario de la aplicación, cómo agrega y elimina
+datos sobre él en el servidor.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Usando Postman</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Con <i><b>Postman</b></i>,
+un evaluador puede:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- redactar y enviar
+solicitudes <i><b>HTTP</b></i> a la <i><b>API</b></i>;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- crear colecciones
+(un conjunto de consultas secuenciales) y carpetas de consultas para
+reducir el tiempo de prueba;</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- cambiar los
+parámetros de la solicitud (por ejemplo, claves de autorización y
+<i><b>URL</b></i>);</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- cambiar entornos
+para solicitudes (por ejemplo, en un banco de pruebas, localmente o
+en un servidor);</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- agregar puntos de
+control al llamar a la <i><b>API</b></i> (fijando el momento de la
+transferencia de datos);</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Realice pruebas de
+<i><b>API</b></i> automatizadas utilizando una colección de
+solicitudes mediante Collection Runner.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El programa utiliza
+el protocolo <i><b>HTTP</b></i> para trabajar con servidores. El
+evaluador envía solicitudes de prueba del cliente al servidor y
+recibe una respuesta si hay un error en la <i><b>API</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	<i><b>Postman</b></i>
+está disponible como aplicación para Windows, Linux y macOS, así
+como en una interfaz web (es necesario instalar el programa Postman
+Desktop Agent para que funcione). Así es como se ve trabajar con
+colecciones de consultas:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><img src="c6_html_f3533421.png" name="Image1" align="left" width="643" height="193" border="0"/>
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">1. Una colección de
+solicitudes para una prueba de API. Dentro de una colección, las
+solicitudes se pueden combinar en carpetas.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">2. Solicitar pestaña
+de la colección.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">3. Seleccionar un
+método para la solicitud (GET, POST, PUT, DELETE).</p>
+<p style="line-height: 100%; margin-bottom: 0cm">4. URL de la
+solicitud en el servidor.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">5. Botón enviar
+solicitud.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">6. Seleccionar
+parámetros de consulta (claves y valores, por ejemplo, solo objetos
+remotos).</p>
+<p style="line-height: 100%; margin-bottom: 0cm">7. El resultado de
+la solicitud (código, cuerpo y tiempo de respuesta, así como el
+tamaño de los datos recibidos).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una colección es
+un archivo de proyecto con consultas asociadas. Normalmente, las
+solicitudes para probar una <i><b>API</b></i> se describen en una
+colección. Dentro de la colección, las solicitudes se pueden
+agrupar en carpetas, por ejemplo, según diferentes versiones de <i><b>API</b></i>
+o elementos de la aplicación que se están probando.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Postman tiene una
+herramienta Collection Runner. Le permite ejecutar simultáneamente
+todas las consultas de una colección o carpeta con el número
+deseado de iteraciones y en el orden deseado. Una vez completadas
+todas las solicitudes, Collection Runner emite un informe que indica
+el éxito de las solicitudes y los códigos de estado.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Para pruebas
+automatizadas, puede aplicar scripts JavaScript a colecciones,
+carpetas y consultas. Por ejemplo, con la ayuda de scripts, puede
+utilizar el resultado de una consulta como condición para otra.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Métodos de Postman</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La mayoría de las
+veces, las <i><b>API</b></i> utilizan la arquitectura <i><b>RESTful</b></i>.
+Esta arquitectura tiene cuatro métodos estándar para consultar
+servidores a través de <i><b>HTTP</b></i>:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>POST</b></i> -
+crear un objeto y enviar datos al servidor;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>GET</b></i> -
+obtener información del servidor;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>PUT</b></i> -
+actualización de objetos;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>DELETE</b></i>
+- eliminar un objeto.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En <i><b>Postman</b></i>,
+puede probar solicitudes para cada método: debe seleccionarlo en la
+pestaña de solicitud. Después de enviar la solicitud, el evaluador
+recibe una respuesta en forma de código de estado <i><b>HTTP</b></i>.
+Hay 40 estados de este tipo en cinco categorías; cada código ayuda
+a comprender si la API está funcionando correctamente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>1xx</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Información</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Informar sobre el
+estado de la transferencia de datos</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>2xx</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Éxito</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Solicitud
+completada exitosamente</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>3xx</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Redirección</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Es posible que la
+solicitud se complete correctamente, pero en una URL diferente.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>4xx</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm">- error del cliente</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Indica un error
+del lado del cliente que impide que se complete la solicitud</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><b>5xx</b></p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Error del Servidor</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Indicación de un
+error en el lado del servidor por el cual no puede procesar la
+solicitud</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Indicación de un
+error en el lado del servidor por el cual no puede procesar la
+solicitud</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h1 class="western" style="page-break-before: always">¿Qué es el
+polimorfismo?</h1>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Literalmente,
+polimorfismo significa muchas formas.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El polimorfismo es
+una idea muy importante en programación. Consiste en utilizar una
+única entidad (método, operador u objeto) para representar
+diferentes tipos en diferentes casos de uso.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Veamos un ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Ejemplo 1: polimorfismo del operador de suma</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Sabemos que el
+operador + se usa a menudo en programas de Python. Pero no tiene un
+único uso.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Para un tipo de
+datos entero, el operador + se utiliza para sumar los operandos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">num1
+= 1</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">num2
+= 2</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(num1
++ num2)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Entonces el
+programa mostrará 3.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	De manera similar,
+el operador + para cadenas se utiliza para la concatenación.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">str1
+= &quot;Python&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">str2
+= &quot;Programming&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(str1+&quot;
+&quot;+str2)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El resultado será
+Python Programming.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí podemos ver
+un único operador + realizando diferentes operaciones en diferentes
+tipos de datos. Este es uno de los ejemplos más simples de
+polimorfismo en Python.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Polimorfismo de función</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Python tiene
+algunas funciones que pueden aceptar argumentos de diferentes tipos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Una de esas
+funciones es <i><b>len()</b></i>. Puede aceptar varios tipos de
+datos. Veamos un ejemplo de cómo funciona esto.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Ejemplo 2: polimorfismo usando la función len()
+como ejemplo</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(len(&quot;Programiz&quot;))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(len([&quot;Python&quot;,
+&quot;Java&quot;, &quot;C&quot;]))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(len({&quot;Name&quot;:
+&quot;John&quot;, &quot;Address&quot;: &quot;Nepal&quot;}))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Output:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">9</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">3</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">2</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí podemos ver
+que la función <i><b>len()</b></i> puede manejar diferentes tipos de
+datos, como cadenas, listas, tuplas, conjuntos y diccionarios. Sin
+embargo, podemos ver que devuelve información específica de cada
+tipo de datos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><img src="c6_html_fb42b214.png" name="Image2" align="left" width="643" height="400" border="0"/>
+<br/>
+
+</p>
+<h2 class="western">Polimorfismo en clases.</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El polimorfismo es
+una idea muy importante en la programación orientada a objetos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Podemos usar la
+idea de polimorfismo para métodos de clase, ya que diferentes clases
+en Python pueden tener métodos con el mismo nombre.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Posteriormente
+podemos generalizar la llamada a estos métodos, ignorando el objeto
+con el que estamos trabajando. Veamos un ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Ejemplo 3: polimorfismo en métodos de clase</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Cat:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, name, age):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.name = name</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.age = age</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def info(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(f&quot;I am a cat. My name is {self.name}. I am
+{self.age} years old.&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def make_sound(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Meow&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Dog:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, name, age):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.name = name</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.age = age</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def info(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(f&quot;I am a dog. My name is {self.name}. I am
+{self.age} years old.&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def make_sound(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(&quot;Bark&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">cat1
+= Cat(&quot;Kitty&quot;, 2.5)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">dog1
+= Dog(&quot;Fluffy&quot;, 4)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">for
+animal in (cat1, dog1):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   animal.make_sound()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   animal.info()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   animal.make_sound()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Output:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Meow</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">I
+am a cat. My name is Kitty. I am 2.5 years old.</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Meow</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Bark</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">I
+am a dog. My name is Fluffy. I am 4 years old.</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Bark</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí hemos creado
+dos clases <i><b>Cat</b></i> y <i><b>Dog</b></i>. Tienen una
+estructura similar y tienen métodos con los mismos nombres <i><b>info()</b></i>
+y <i><b>make_sound()</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Sin embargo, tenga
+en cuenta que no creamos una clase principal común ni conectamos
+clases de ninguna otra manera. Aunque podemos empaquetar dos objetos
+diferentes en una tupla e iterar sobre ella, usaremos la variable
+común <i><b>animal</b></i>. Esto es posible gracias al polimorfismo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Polimorfismo y herencia.</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Como en otros
+lenguajes de programación, en Python, las clases hijas pueden
+heredar métodos y atributos de su clase padre. Podemos anular
+algunos métodos y atributos específicamente para que coincidan con
+una clase secundaria, un comportamiento que conocemos como anulación
+de métodos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	El polimorfismo nos
+permite tener acceso a estos métodos y atributos anulados que tienen
+el mismo nombre que en la clase principal.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Veamos un ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Ejemplo 4: anulación de método</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">from
+math import pi</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Shape:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, name):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.name = name</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       pass</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def fact(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return &quot;I am a two-dimensional shape.&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __str__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.name</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Square(Shape):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, length):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       super().__init__(&quot;Square&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.length = length</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return self.length**2</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def fact(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return &quot;Squares have each angle equal to 90 degrees.&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
+Circle(Shape):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def __init__(self, radius):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       super().__init__(&quot;Circle&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       self.radius = radius</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def area(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return pi*self.radius**2</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">a
+= Square(4)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">b
+= Circle(7)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(b)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(b.fact())</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(a.fact())</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(b.area())</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Output:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Circle</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">I
+am a two-dimensional shape.</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Squares
+have each angle equal to 90 degrees.</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">153.93804002589985</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí podemos ver
+que métodos como <i><b>__str__()</b></i>, que no fueron anulados en
+las clases secundarias, se utilizan desde la clase principal.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Gracias al
+polimorfismo, el intérprete de Python reconoce automáticamente que
+el método <i><b>fact()</b></i> para el objeto a(clase Square) está
+anulado. Y usa el definido en la clase secundaria.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Por otro lado, dado
+que el método <i><b>fact()</b></i> para el objeto b no se anula, se
+utiliza el método con el mismo nombre de la clase principal (Shape).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><img src="c6_html_6a825099.png" name="Image3" align="left" width="643" height="608" border="0"/>
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Tenga en cuenta que
+la sobrecarga de métodos (crear métodos con el mismo nombre pero
+diferentes tipos de argumentos) no es compatible con Python.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h1 class="western"><br/>
+<br/>
+
+</h1>
+<h1 class="western" style="page-break-before: always">¿Qué es un
+método dunder?</h1>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los métodos
+mágicos, o métodos dunder (doble guión bajo), en Python comienzan
+y terminan con un doble guión bajo. Nos permiten definir
+comportamientos especiales para objetos, como un método <i><b>__init__</b></i>
+especial para inicializar un nuevo objeto. Cuando se utilizan
+operaciones estándar como suma, resta, acceso a atributos, etc., el
+intérprete llama a los métodos mágicos correspondientes.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Crear y eliminar objetos</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__new__(cls[,
+...])</b></i> - método para crear un tipo de clase. Toma como primer
+argumento el tipo de la clase en la que se llama y normalmente
+devuelve ese mismo tipo. Se utiliza principalmente para configurar la
+creación de una instancia de clase de aquellos objetos que heredan
+de tipos inmutables (por ejemplo, int, str o tuple).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__init__(self[,
+...])</b></i> - constructor de clase. Se utiliza al definir objetos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__init_subclass__(cls)</b></i>
+- le permite anular la creación de subclases de objetos. Por
+ejemplo, agregue atributos adicionales:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__del__(self)</b></i>
+- es el destructor de clases. Lo llama automáticamente el recolector
+de basura y casi nunca se usa, excepto cuando es necesario advertir
+al usuario sobre identificadores abiertos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Propiedades generales de los objetos.</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__repr__(self)</b></i>
+- cadena de información sobre el objeto. Se imprime cuando se llama
+a la función <i><b>repr(...)</b></i> o durante la depuración. Este
+método está destinado a este último. Por ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+class Test:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    def __repr__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        return &quot;&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+Test()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+''</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__str__(self)</b></i>
+-  se llama cuando se llama a la función <i><b>str(...)</b></i>,
+devuelve un objeto de cadena. Por ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+class Test:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    def __str__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        return &quot;Hello World&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+test = Test()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+str(test)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'Hello World'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__bytes__(self)</b></i>
+- similar a <i><b>__str__(self),</b></i> solo se devuelve un conjunto
+de bytes.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__format__(self,
+format_spec)</b></i> - se llama cuando se llama a <i><b>format(...)</b></i>
+y se usa para formatear una cadena usando literales de cadena.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Métodos para comparar objetos entre sí.</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__lt__(self,
+other)</b></i> - define el comportamiento del operador de comparación
+&quot;menor que&quot;, <i><b>&lt;</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__le__(self,
+other)</b></i> - define el comportamiento del operador de comparación
+menor o igual, <i><b>&lt;=</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__eq__(self,
+other)</b></i> - define el comportamiento del operador de &quot;igualdad&quot;,
+<i><b>==</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ne__(</b></i><i><b>self,</b></i><i><b>
+</b></i><i><b>other</b></i><i><b>)</b></i> - define el comportamiento
+del operador de “desigualdad”, <i><b>!=</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__gt__(self,
+other)</b></i> - define el comportamiento del operador de comparación
+“mayor que”, <i><b>&gt;</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ge__(self,
+other)</b></i> - define el comportamiento del operador de comparación
+mayor o igual, &gt;=.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__hash__(self)</b></i>
+- lo llama la función h<i><b>ash(...)</b></i> y se utiliza para
+determinar la suma de comprobación de un objeto para demostrar su
+unicidad. Por ejemplo, para agregar un objeto a un <i><b>set</b></i>,
+<i><b>frozenset</b></i>, o usarlo como clave en un diccionario <i><b>dict</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__bool__(self)</b></i>
+- Llamado por la función <i><b>bool(...)</b></i> y devuelve <i><b>True</b></i>
+o <i><b>False</b></i> según la implementación. Si este método no
+está implementado en un objeto y el objeto es algún tipo de
+secuencia (lista, tupla, etc.), se llama al método <i><b>__len__</b></i>.
+Se utiliza principalmente en condiciones <i><b>if</b></i>, por
+ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+class Test:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    def __bool__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        return True</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+test = Test()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+if test:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+   print(&quot;Hello World&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'Hello World'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Accediendo a los atributos del objeto</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">El acceso a todas
+las propiedades del objeto también se controla mediante métodos
+separados:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__getattr__(self,
+name)</b></i> - llamado por el método <i><b>getattr(...)</b></i> o
+cuando se accede a un atributo de objeto a través de <i><b>x</b></i>.<i><b>y</b></i>,
+donde <i><b>x</b></i> es el objeto e <i><b>y</b></i> es el atributo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__setattr__(self,
+nombre, valor) -</b></i> llamado por el método <i><b>setattr(...)</b></i>
+o cuando se accede a un atributo de objeto y luego se determina el
+valor del atributo pasado. Por ejemplo: <i><b>x.y = 1</b></i>, donde
+<i><b>x</b></i> es un objeto, <i><b>y</b></i> es un atributo y 1 es
+el valor del atributo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__delattr__(self,
+name) -</b></i> llamado mediante el método <i><b>delattr(...)</b></i>
+o cuando se elimina manualmente un atributo de un objeto usando del
+<i><b>x.y</b></i>, donde x es un objeto e y es un atributo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__dir__(self)
+-</b></i> llamado por el método <i><b>dir(...)</b></i> y muestra una
+lista de atributos de objetos disponibles.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Creando secuencias</h2>
+<p style="line-height: 100%; margin-bottom: 0cm">Cualquier objeto
+puede implementar métodos de secuencia integrados (diccionarios,
+tuplas, listas, cadenas, etc.). El acceso a los valores de secuencia
+se anula mediante los siguientes métodos:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__len__(self)
+- </b></i>lo llama el método <i><b>len(...)</b></i> y devuelve el
+número de elementos de la secuencia.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__getitem__(self,
+key)</b></i>: se llama al acceder a un elemento en una secuencia
+mediante su clave (índice). El método debe generar una excepción
+<i><b>TypeError</b></i> si se utiliza un tipo de clave incorrecto y
+un KeyError si ningún elemento de la secuencia coincide con la clave
+dada. Por ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+list_object = [1, 2, 3, 4, 5]</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+print(list_object[0])</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+1</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+string_object = &quot;hello world&quot;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+print(string_object[0:5])</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'hello'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+dict_object = {&quot;key0&quot;: True, &quot;key1&quot;: False}</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+print(dict_object[&quot;key0&quot;])</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+True</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__setitem__(self,
+key, value)</b></i>: se llama al asignar cualquier valor a un
+elemento de la secuencia. También puede generar excepciones
+<i><b>TypeError</b></i> y <i><b>KeyError</b></i>. Por ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+list_object = [1, 2, 3, 4, 5]</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+list_object[0] = 78</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+print(list_object)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+[78, 2, 3, 4, 5]</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+dict_object = {&quot;key0&quot;: True, &quot;key1&quot;: False}</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+dict_object[&quot;key0&quot;] = False</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+print(dict_object)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+{&quot;key0&quot;: False, &quot;key1&quot;: False}</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__delitem__(self,
+key)</b></i>: se llama cuando un valor en una secuencia es eliminado
+por su índice (clave) usando la sintaxis de la palabra clave <i><b>del</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__missing__(self,
+key)</b></i>: se llama en los casos en que el valor no existe en la
+secuencia.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__iter__(self)</b></i>
+- llamado por el método <i><b>iter(...)</b></i> y devuelve un
+iterador de la secuencia, por ejemplo, para usar el objeto en un
+bucle:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+class Test:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    def __iter__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        return (1, 2, 3)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+for value in Test():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    print(value)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+1</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+2</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+3</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__reversed__(self)</b></i>
+- llamado por el método <i><b>invertido(...)</b></i> y, similar al
+método <i><b>__iter__</b></i>, devuelve el mismo iterador, solo que
+en orden inverso.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__contains__(self,
+item)</b></i>: se llama cuando se verifica si un elemento pertenece a
+una secuencia que usa <i><b>in</b></i> o <i><b>no</b></i><i><b>t</b></i><i><b>
+in</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Métodos mágicos numéricos.</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Estos métodos se
+dividen en varios grupos: operadores unarios, aritmética ordinaria,
+operadores aritméticos reflejados, asignaciones compuestas y
+conversiones de tipos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Operadores unarios</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__neg__(self)
+</b></i>- define el comportamiento de negación (<i><b>-a</b></i>)</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__pos__(self)</b></i>
+- define el comportamiento del unario más (<i><b>+a</b></i>)</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__abs__(self)</b></i>
+- define el comportamiento de la función incorporada <i><b>abs(...)</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__invert__(self)</b></i>
+- define el comportamiento para invertir con el operador <i><b>~</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Operadores aritméticos comunes</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__add__(self,
+other)</b></i> - suma, operador <i><b>+</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__sub__(yo,
+otro)</b></i> - resta, operador <i><b>-</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__mul__(self,
+other)</b></i> — multiplicación, operador <i><b>*</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__matmul__(self,
+other)</b></i> — multiplicación de matrices, operador <i><b>@</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__truediv__(yo,
+otro) </b></i>- división, operador <i><b>/</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__floordiv__(self,
+other)</b></i> - división de enteros, operador<i><b> //</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__mod__(self,
+other)</b></i> — resto de la división, operador <i><b>%</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__divmod__(self,
+other)</b></i>: división con resto, define el comportamiento de la
+función incorporada <i><b>divmod(...)</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__pow__(self,
+other[, módulo]) </b></i>- exponenciación, operador <i><b>**</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__lshift__(self,
+other)</b></i> — desplazamiento binario a la izquierda, operador <i><b>&lt;&lt;</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rshift__(self,
+other)</b></i> - desplazamiento binario a la derecha, operador <i><b>&gt;&gt;</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__</b></i><i><b>and</b></i><i><b>__(</b></i><i><b>self</b></i><i><b>,
+</b></i><i><b>other</b></i><i><b>)</b></i> - operador binario AND, <i><b>&amp;</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__xor__(</b></i><i><b>self</b></i><i><b>,
+</b></i><i><b>other</b></i><i><b>) </b></i>- O exclusivo, operador <i><b>^</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__</b></i><i><b>or</b></i><i><b>__(</b></i><i><b>self</b></i><i><b>,
+</b></i><i><b>other</b></i><i><b>)</b></i> - operador binario OR <i><b>|</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Operadores aritméticos reflejados</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si en la aritmética
+ordinaria entre los objetos a y b, el objeto que modificamos es a, y
+el objeto con el que operamos es b, entonces en la aritmética
+reflejada es al revés: b es mutable, a es el objeto con el que
+operamos y que pasó como argumento.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La lista de métodos
+es similar a la utilizada en aritmética ordinaria, excepto que el
+prefijo &quot;r&quot; se agrega a todos los métodos:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__radd__(self,
+other)</b></i> - suma, operador +</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rsub__(</b></i><i><b>self</b></i><i><b>,
+</b></i><i><b>other</b></i><i><b>) </b></i>- resta, operador -</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rmul__(self,
+other) </b></i>— multiplicación, operador *</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rmatmul__(self,
+other)</b></i> — multiplicación de matrices, operador @</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rtruediv__(</b></i><i><b>self</b></i><i><b>,
+</b></i><i><b>other</b></i><i><b>) </b></i>- división, operador /</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rfloordiv__(self,
+other) </b></i>- división de enteros, operador //</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rmod__(self,
+other)</b></i> — resto de la división, operador %</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rdivmod__(self,
+other)</b></i> — división con resto</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">_<i><b>_rpow__(self,
+other[, módulo]) </b></i>- exponenciación, operador **</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rlshift__(self,
+other)</b></i> — desplazamiento binario a la izquierda, operador &lt;&lt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rrshift__(self,
+other)</b></i> - desplazamiento binario a la derecha, operador &gt;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rand__(self,
+other) </b></i>- operador binario AND, &amp;</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__rxor__(</b></i><i><b>self</b></i><i><b>,
+</b></i><i><b>other</b></i><i><b>)</b></i> - O exclusivo, operador ^</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ror__(self,
+other)</b></i> - operador binario OR |</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Asignación compuesta</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Estos métodos son
+una combinación de un operador &quot;normal&quot; y una asignación.
+Devuelve el mismo tipo de objeto que se asignará a la variable de la
+izquierda.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__iadd__(self,
+other) </b></i>— suma con asignación, operador +=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__isub__(self,
+other)</b></i> — resta con asignación, operador -=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__imul__(self,
+other)</b></i> — multiplicación con asignación, operador *=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__imatmul__(self,
+other) </b></i>— multiplicación de matrices con asignación,
+operador @=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__itruediv__(self,
+other)</b></i> - división con asignación, operador /=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ifloordiv__(self,
+other)</b></i> — división de enteros con asignación, operador //=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__imod__(self,
+other)</b></i> — resto de la división con asignación, %= operador</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ipow__(self,
+other[, modulo])</b></i> - exponenciación con asignación, operador
+**=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ilshift__(self,
+other)</b></i> — desplazamiento binario a la izquierda con
+asignación, operador &lt;&lt;=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__irshift__(self,
+other)</b></i> — desplazamiento binario a la derecha con
+asignación, operador &gt;&gt;=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__iand__(self,
+other)</b></i> - AND binario con asignación, operador &amp;=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ixor__(self,
+other) </b></i>— OR exclusivo con asignación, operador ^=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ior__(self,
+other)</b></i> - binario OR con asignación, operador |=</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Conversiones de tipos</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Además, Python
+tiene muchos métodos que le permiten anular el comportamiento de las
+funciones de conversión de tipos integradas como <i><b>int(...)</b></i>,
+<i><b>float(...)</b></i>, etc. Por ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__complex__(self)</b></i>
+- conversión de tipo a número complejo</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__int__(self)</b></i>
+- conversión de tipo a <i><b>int</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__float__(self)</b></i>
+- conversión de tipo a flotante</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__index__(self)</b></i>:
+conversión de tipos a int cuando el objeto se utiliza en sectores
+(expresiones como [inicio:parada:paso])</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__round__(self[,
+ndigits])</b></i> - redondear un número usando la función
+round(...)</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__trunc__(self)</b></i>
+- llamado por el método <i><b>math.trunc(...)</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__floor__(self)
+</b></i>- llamado por el método <i><b>math.floor(...)</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__ceil__(self)
+</b></i>- llamado por el método <i><b>math.ceil(...)</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Invocables</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__call__(self[,
+args...])</b></i> - permite que cualquier instancia de la clase se
+comporte como una función normal. Por ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt; class Test:</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt;     def __call__(self, message):</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt;         print(message)</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt;         return True</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt; test = Test()</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">&gt;&gt;&gt; test(&quot;Hello World&quot;)</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">... 'Hello World'</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">... True</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__await__(self)</b></i>:
+devuelve un iterador, convirtiendo la clase en una corrutina, cuyo
+resultado se puede obtener usando await.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Administradores de contexto</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Cualquier objeto se
+puede representar como un administrador de contexto, al que se llama
+usando <i><b>with</b></i> o <i><b>async with</b></i>. Esta
+construcción le permite realizar cualquier acción para configurar
+el objeto y, al salir del administrador de contexto, realizar
+cualquier acción de limpieza, independientemente de si la excepción
+fue causada en el bloque del administrador de contexto.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__enter__(self)</b></i>
+- define el comienzo del bloque del administrador de contexto llamado
+con <i><b>with</b></i></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__exit__(self,
+exc_type, exc_value, traceback)</b></i>: define el final del bloque
+del administrador de contexto. Se puede utilizar para controlar
+excepciones, limpieza o cualquier acción que deba realizarse después
+de un bloque dentro de un with. Si el bloque se ejecutó
+correctamente, los tres argumentos (exc_type, exc_value y traceback)
+se establecerán en <i><b>None</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+class ContextManager:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    def __enter__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        log(&quot;entering context&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    def __exit__(self, exc_type, exc_value, traceback):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        log(&quot;exiting context&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+with ContextManager():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+    print(&quot;in context manager&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'entering context'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'in context manager'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'exiting context'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__aenter__(self)</b></i>
+- similar a <i><b>__enter__</b></i>, solo que la función devuelve
+una corrutina (cuyo resultado se puede obtener usando <i><b>await</b></i>)</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><i><b>__aexit__(self,
+exc_type, exc_value, traceback)</b></i>: similar a <i><b>__exit__</b></i>,
+solo que la función devuelve una corrutina (cuyo resultado se puede
+obtener usando <i><b>await</b></i>)</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+class AsyncContextManager:</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    async def __aenter__(self):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        await log(&quot;entering context&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+    async def __aexit__(self, exc_type, exc_value, traceback):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+        await log(&quot;exiting context&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+async with AsyncContextManager():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+    print(&quot;in context manager&quot;)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'entering context'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'in context manager'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
+'exiting context'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h1 class="western"><br/>
+<br/>
+
+</h1>
+<h1 class="western" style="page-break-before: always">¿Qué es un
+decorador de python?</h1>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Comprender a los
+decoradores es un hito importante para cualquier programador de
+Python.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los decoradores en
+Python le permiten ampliar y cambiar el comportamiento de los objetos
+invocables (funciones, métodos y clases) sin cambiar permanentemente
+el objeto invocable en sí.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Cualquier
+funcionalidad suficientemente general que pueda &quot;adjuntarse&quot;
+al comportamiento de una clase o función existente es un excelente
+ejemplo del uso de decoradores. Esto incluye:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Inicio sesión,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- proporcionar
+control de acceso y autenticación,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- herramientas y
+funciones de gestión del tiempo,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- límite de
+velocidad,</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- almacenamiento en
+caché y mucho más.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">¿Por qué deberías aprender decoradores en
+Python?</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Ésta es una
+pregunta justa. Lo que acabo de mencionar suena bastante abstracto y
+puede resultar difícil entender cómo los decoradores pueden ayudar
+a un desarrollador de Python en su trabajo diario. He aquí un
+ejemplo:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Imagine que su
+programa de informes tiene 30 funciones con lógica empresarial. Una
+mañana lluviosa de lunes, tu jefe te dice:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	“¿Recuerdas esos
+informes de TPS? Necesitamos agregar el registro de datos de entrada
+y salida en cada paso del generador de informes. La empresa XYZ
+necesita esto para una auditoría. Les dije que podríamos terminarlo
+el miércoles”.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Dependiendo de qué
+tan familiarizado esté con los decoradores de Python, esta solicitud
+aumentará su presión arterial o tomará estos nuevos requisitos con
+calma.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Sin conocimientos
+de decorador, probablemente pasará los próximos tres días
+intentando cambiar cada una de esas 30 funciones y abarrotándolas
+con llamadas de registro manual. Diviértete en general.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si conoces a los
+decoradores, sonreirás con calma y dirás algo como: &quot;Está
+bien, hoy estará listo a las 2 p. m.&quot;.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Inmediatamente
+después de esto, imprimirá el código para el decorador general
+@audit_log (solo alrededor de 10 líneas) y lo agregará antes de
+cada definición de función. Luego te comprometes y tomas una taza
+de café.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Estoy exagerando
+aquí, por supuesto. Pero solo un poco. Los decoradores realmente
+pueden ser así de poderosos.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Yo diría que
+comprender a los decoradores es un hito importante para cualquier
+programador experimentado en Python. Requieren una sólida
+comprensión de varios conceptos avanzados del lenguaje, incluidas
+las propiedades de funciones de primera clase.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">Pero:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Vale la pena entender a los decoradores</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Comprender cómo
+funcionan los decoradores en Python es increíblemente gratificante.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Por supuesto, los
+decoradores parecen bastante difíciles de entender cuando se
+presentan por primera vez, pero son una característica muy útil que
+verá a menudo en marcos de trabajo de terceros y en la biblioteca
+estándar de Python.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Explicar los
+decoradores también es un capítulo importante en cualquier buen
+tutorial de Python.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Estas son las
+conclusiones más importantes de las &quot;funciones de primera
+clase&quot; para comprender a los decoradores:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Las funciones son
+objetos: pueden asignarse a variables, pasarse a otras funciones y
+devolverse desde ellas.</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Las funciones se
+pueden definir dentro de otras funciones y una función secundaria
+puede capturar el estado local de la función principal (cierres
+léxicos).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">Conceptos básicos del decorador de Python</h2>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Entonces, ¿qué
+son realmente los decoradores? &quot;Decoran&quot; o &quot;envuelven&quot;
+otra función y permiten que el código se ejecute antes y después
+de la ejecución de la función envuelta.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los decoradores le
+permiten definir módulos reutilizables que pueden cambiar o ampliar
+el comportamiento de otras funciones. Además, le permiten hacer esto
+sin cambiar constantemente la función empaquetada. El comportamiento
+de una función cambia sólo cuando está decorada.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Entonces, ¿cómo
+es una implementación de decorador simple? En términos generales,
+un decorador es un objeto invocable que toma como entrada un objeto
+invocable y devuelve otro objeto invocable.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	La siguiente
+función tiene esta propiedad y puede considerarse el decorador más
+simple que puedes escribir:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+null_decorator(func):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return func</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Como puede ver,
+null_decorator es un objeto invocable, toma otro objeto invocable
+como entrada y devuelve el mismo objeto de entrada sin modificarlo.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Usémoslo para
+decorar (o envolver) otra función:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+greet():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return 'Hello!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">greet
+= null_decorator(greet)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+greet()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'Hello!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En este ejemplo,
+definí la función <i><b>greet</b></i> y luego la decoré
+inmediatamente pasándola por la función <i><b>null_decorator</b></i>.
+Sé que esto no parece muy útil en este momento (diseñamos
+específicamente el decorador <i><b>null</b></i> para que sea inútil,
+¿verdad?), pero después de un tiempo quedará más claro cómo
+funciona la sintaxis del decorador en Python.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En lugar de llamar
+explícitamente a <i><b>null_decorator</b></i> al <i><b>greet</b></i>
+y luego reasignar la variable <i><b>greet</b></i>, puedes usar la
+sintaxis <i><b>@</b></i> de Python para decorar la función en un
+solo paso:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@null_decorator</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+greet():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return 'Hello!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+greet()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'Hello!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Colocar líneas
+<i><b>@null_decorator</b></i> antes de la definición de una función
+es lo mismo que definir primero una función y luego aplicarle un
+decorador. Usar la sintaxis <i><b>@</b></i> es simplemente azúcar
+sintáctico y una abreviatura de este patrón de uso común.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Tenga en cuenta que
+el uso de la sintaxis <i><b>@</b></i> decora la función directamente
+en el momento de la definición. Esto dificulta el acceso al original
+sin decorar sin hacks frágiles. Por lo tanto, puede decorar algunas
+funciones manualmente para conservar la capacidad de llamar a una
+función no decorada.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Los decoradores pueden cambiar el comportamiento</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Ahora que estás un
+poco familiarizado con la sintaxis del decorador, escribamos otro
+decorador que realmente haga algo y cambie el comportamiento de la
+función que se está decorando.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí hay un
+decorador un poco más complejo que convierte el resultado de una
+función decorada a letras mayúsculas:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">def uppercase(func):</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">    def wrapper():</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">        original_result = func()</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">        modified_result =
+original_result.upper()</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">        return modified_result</font></p>
+<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">    return wrapper</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	En lugar de
+simplemente devolver la función de entrada como lo hizo el decorador
+<i><b>null</b></i>, el decorador <i><b>uppercase</b></i> define una
+nueva función sobre la marcha (un cierre) y la usa para envolver la
+función de entrada para cambiar su comportamiento en el momento en
+que se llama.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Un cierre
+contenedor tiene acceso a la función de entrada no decorada y es
+libre de ejecutar código adicional antes y después de llamar a la
+función de entrada. (Técnicamente, no es necesario llamar a la
+función de entrada en absoluto).</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Tenga en cuenta que
+la función decorada nunca se ha ejecutado antes. De hecho, llamar a
+la función de entrada en este punto no tiene ningún sentido: el
+decorador debería poder cambiar el comportamiento de su función de
+entrada cuando se llama.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Es hora de ver al
+decorador en <i><b>uppercase</b></i> en acción. ¿Qué pasa si
+decoras la función de <i><b>greet</b></i> original con él?</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@uppercase</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+greet():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return 'Hello!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+greet()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'HELLO!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Espero que este
+haya sido el resultado que esperabas. Echemos un vistazo más de
+cerca a lo que sucedió aquí. A diferencia de <i><b>null_decorator</b></i>,
+el decorador <i><b>uppercase</b></i> devuelve un objeto de función
+diferente cuando decora una función:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+greet</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&lt;function
+greet at 0x10e9f0950&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+null_decorator(greet)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&lt;function
+greet at 0x10e9f0950&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+uppercase(greet)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&lt;function
+uppercase.&lt;locals&gt;.wrapper at 0x10da02f28&gt;</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Como vio
+anteriormente, esto es necesario para cambiar el comportamiento de la
+función decorada cuando se llama. El decorador <i><b>uppercase</b></i>
+es en sí mismo una función. Y la única forma de influir en el
+&quot;comportamiento futuro&quot; de la función de entrada que
+decora es reemplazar (o envolver) la función de entrada con un
+cierre.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Es por eso que
+<i><b>uppercase</b></i> define y devuelve otra función (el cierre)
+que se puede llamar más tarde, ejecutando la función de entrada
+original y cambiando su salida.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Los decoradores
+cambian el comportamiento del objeto invocable mediante un
+contenedor, por lo que no es necesario cambiar el original
+constantemente. El objeto invocable no se modifica permanentemente;
+su comportamiento solo cambia cuando se adorna.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Esto le permite
+&quot;adjuntar&quot; funciones y clases existentes con módulos
+reutilizables como el registro y otras herramientas. Esto es lo que
+hace que los decoradores sean una característica tan poderosa en
+Python, que a menudo se usa en la biblioteca estándar y en paquetes
+de terceros.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Aplicar múltiples decoradores a una función</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Quizás no sea
+sorprendente que se pueda aplicar más de un decorador a una función.
+Esto acumula sus efectos y es lo que hace que los decoradores sean
+tan útiles como módulos reutilizables.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	He aquí un
+ejemplo. Los dos decoradores siguientes envuelven la cadena de salida
+de la función que se está decorando en etiquetas HTML. Al observar
+cómo se anidan las etiquetas, puede ver el orden en el que Python
+aplica varios decoradores:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">def strong(func):</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">    def wrapper():</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">        return '&lt;strong&gt;' + func() +
+'&lt;/strong&gt;'</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">    return wrapper</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<br/>
+
+</p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">def emphasis(func):</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">    def wrapper():</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">        return '&lt;em&gt;' + func() + '&lt;/em&gt;'</font></p>
+<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
+<font color="#c9211e">    return wrapper</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Ahora tomemos estos
+dos decoradores y apliquémoslos a nuestra función <i><b>greet</b></i>
+al mismo tiempo. Para hacer esto, puedes usar la sintaxis <i><b>@</b></i>
+habitual y simplemente colocar varios decoradores encima de una
+función:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@strong</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@emphasis</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+greet():</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return 'Hello!'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	¿Qué resultado
+espera ver si ejecuta la función decorada? ¿El decorador @emphasis
+agregará primero su etiqueta &lt;em&gt; o @strong tendrá prioridad?
+Esto es lo que sucede cuando llamas a una función decorada:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+greet()</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'&lt;strong&gt;&lt;em&gt;Hello!&lt;/em&gt;&lt;/strong&gt;'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí se puede ver
+claramente el orden en el que se utilizaron los decoradores: de abajo
+hacia arriba. Primero, la función de entrada se envolvió con el
+decorador @emphasis y luego la función resultante (decorada) se
+envolvió nuevamente con el decorador @strong.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Para recordar este
+orden ascendente, me gusta llamar a este comportamiento &quot;pila de
+decoradores&quot;. Comienzas a construir la pila en la parte inferior
+y luego continúas agregando nuevos bloques en la parte superior para
+avanzar hacia arriba.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si desglosamos el
+ejemplo anterior y no usamos la sintaxis @ para aplicar decoradores,
+la cadena de llamadas a funciones de decorador se verá así:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">decorated_greet
+= strong(emphasis(greet))</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí nuevamente
+puede ver que el decorador de énfasis se aplica primero y luego la
+función envuelta resultante se envuelve nuevamente con el decorador
+<i><b>strong</b></i>.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Esto también
+significa que los niveles profundos de superposición de decoradores
+eventualmente afectarán el rendimiento a medida que continúen
+agregando llamadas a funciones anidadas. Esto no suele ser un
+problema en la práctica, pero es algo a tener en cuenta si estás
+trabajando en código de alto rendimiento.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<h3 class="western">Decorar funciones que toman argumentos.</h3>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Todos los ejemplos
+hasta ahora han decorado sólo la función nula simple <i><b>greet</b></i>,
+que no acepta ningún argumento. Entonces, los decoradores que has
+visto aquí hasta ahora no se han ocupado de pasar argumentos a la
+función de entrada.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Si intenta aplicar
+uno de estos decoradores a una función que acepta argumentos, no
+funcionará correctamente. ¿Cómo decorar una función que toma
+argumentos arbitrarios?</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Aquí es donde las
+funciones *args y **kwargs de Python resultan útiles para trabajar
+con un número variable de argumentos. El decorador <i><b>proxy</b></i>
+aprovecha esta característica:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+proxy(func):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def wrapper(*args, **kwargs):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return func(*args, **kwargs)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return wrapper</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Hay dos cosas
+destacables sobre este decorador:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Utiliza los
+operadores * y ** en la definición de cierre del contenedor para
+recopilar todos los argumentos clave y posicionales y almacenarlos en
+variables (args y kwargs).</p>
+<p style="line-height: 100%; margin-bottom: 0cm">- Luego, el cierre
+contenedor pasa los argumentos recopilados a la función de entrada
+original utilizando los operadores de &quot;desenvolvimiento de
+argumentos&quot; * y **.</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Ampliemos la
+técnica detrás del decorador <i><b>proxy</b></i> con un ejemplo
+práctico más útil. Aquí hay un decorador de <i><b>trace</b></i>
+que imprime los argumentos y resultados de una función mientras se
+ejecuta:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+trace(func):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   def wrapper(*args, **kwargs):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(f'TRACE: calling {func.__name__}() '</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+             f'with {args}, {kwargs}')</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       original_result = func(*args, **kwargs)</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       print(f'TRACE: {func.__name__}() '</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+             f'returned {original_result!r}')</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+       return original_result</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return wrapper</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm">	Al decorar una
+función con <i><b>trace</b></i> y llamarla, puede imprimir los
+argumentos pasados ​​a la función decorada y su valor de
+retorno. Este sigue siendo un ejemplo de juguete, pero en caso de
+necesidad será una gran ayuda para la depuración:</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@trace</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
+say(name, line):</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
+   return f'{name}: {line}'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
+say('Jane', 'Hello, World')</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'TRACE:
+calling say() with (&quot;Jane&quot;, &quot;Hello, World&quot;), {}'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'TRACE:
+say() returned &quot;Jane: Hello, World&quot;'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'Jane:
+Hello, World'</font></p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+
+</p>
+</body>
+</html>
