@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 24.2.2.1 (Linux)"/>
 	<meta name="created" content="2024-04-25T08:45:03.669728512"/>
-	<meta name="changed" content="2024-04-27T12:43:51.905832461"/>
+	<meta name="changed" content="2024-04-30T09:31:19.990075333"/>
 	<style type="text/css">
 		@page { size: 21cm 29.7cm; margin: 2cm }
 		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
@@ -21,6 +21,10 @@
 		h3.western { font-family: "Liberation Sans", sans-serif; font-size: 14pt; font-weight: bold }
 		h3.cjk { font-family: "Source Han Sans CN"; font-size: 14pt; font-weight: bold }
 		h3.ctl { font-family: "Noto Sans Devanagari"; font-size: 14pt; font-weight: bold }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
 		h4 { margin-top: 0.21cm; margin-bottom: 0.21cm; background: transparent; page-break-after: avoid }
 		h4.western { font-family: "Liberation Sans", sans-serif; font-size: 13pt; font-style: italic; font-weight: bold }
 		h4.cjk { font-family: "Source Han Sans CN"; font-size: 13pt; font-style: italic; font-weight: bold }
@@ -138,12 +142,9 @@ clase mínima.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-C: </font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   pass</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class C:</b>
+    <b>pass</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Una clase consta de
@@ -156,9 +157,8 @@ objeto de clase, debe utilizar la siguiente sintaxis:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">object_name
-= class_name()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>object_name = class_name()</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -177,20 +177,13 @@ atributo dinámico, sí. Ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   default_color = &quot;green&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Rectangle:</b>
+    <b>default_color = &quot;green&quot;</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height):</b>
+        <b>self.width = width</b>
+        <b>self.height = height</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	En la clase
@@ -200,10 +193,9 @@ acceder a él sin crear un objeto de la clase <i><b>Rectangle</b></i>.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Rectangle.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'green'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; Rectangle.default_color</b>
+<b>'green'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	<i><b>width</b></i>
@@ -215,15 +207,12 @@ primero necesita crear un objeto de la clase <i><b>Rectangle</b></i>:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect = Rectangle(10, 20)</b>
+<b>&gt;&gt;&gt; rect.width</b>
+<b>10</b>
+<b>&gt;&gt;&gt; rect.height</b>
+<b>20</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Si accedemos a él
@@ -231,15 +220,11 @@ a través de la clase, obtendremos un error:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Rectangle.width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
-(most recent call last):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
- File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">AttributeError:
-type object 'Rectangle' has no attribute 'width'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; Rectangle.width</b>
+<b>Traceback (most recent call last):</b>
+  <b>File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</b>
+<b>AttributeError: type object 'Rectangle' has no attribute 'width'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Al mismo tiempo, si
@@ -253,10 +238,9 @@ nuevamente el valor del atributo <i><b>default_color</b></i>:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Rectangle.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'green'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; Rectangle.default_color</b>
+<b>'green'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Asignémosle un
@@ -264,12 +248,10 @@ nuevo valor:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Rectangle.default_color = &quot;red&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Rectangle.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; Rectangle.default_color = &quot;red&quot;</b>
+<b>&gt;&gt;&gt; Rectangle.default_color</b>
+<b>'red'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Creemos dos objetos
@@ -278,17 +260,13 @@ color_predeterminado sea el mismo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r1 = Rectangle(1,2)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r2 = Rectangle(10, 20)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r1.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r2.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; r1 = Rectangle(1,2)</b>
+<b>&gt;&gt;&gt; r2 = Rectangle(10, 20)</b>
+<b>&gt;&gt;&gt; r1.default_color</b>
+<b>'red'</b>
+<b>&gt;&gt;&gt; r2.default_color</b>
+<b>'red'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Si cambia el valor
@@ -306,12 +284,10 @@ estática y se perderá el acceso a esta última:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r1.default_color = &quot;blue&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r1.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'blue'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; r1.default_color = &quot;blue&quot;</b>
+<b>&gt;&gt;&gt; r1.default_color</b>
+<b>'blue'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	En este caso, <i><b>r2</b></i>
@@ -319,13 +295,11 @@ conserva el valor del atributo estático:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-r2.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Rectangle.default_color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; r2.default_color</b>
+<b>'red'</b>
+<b>&gt;&gt;&gt; Rectangle.default_color</b>
+<b>'red'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	En general,
@@ -357,34 +331,19 @@ especial, se le pasa <i><b>self</b></i> como el primero argumento:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-MyClass:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class MyClass:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @staticmethod</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def ex_static_method():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;static method&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@staticmethod</b>
+    <b>def ex_static_method():</b>
+        <b>print(&quot;static method&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @classmethod</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def ex_class_method(cls):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;class method&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@classmethod</b>
+    <b>def ex_class_method(cls):</b>
+        <b>print(&quot;class method&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def ex_method(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;method&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def ex_method(self):</b>
+        <b>print(&quot;method&quot;)</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Se pueden llamar
@@ -393,37 +352,21 @@ llamar a <i><b>ex_method() </b></i>requiere un objeto:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-MyClass.ex_static_method()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">static
-method</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; MyClass.ex_static_method()</b>
+<b>static method</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-MyClass.ex_class_method()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-method</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; MyClass.ex_class_method()</b>
+<b>class method</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-MyClass.ex_method()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
-(most recent call last):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
- File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">TypeError:
-ex_method() missing 1 required positional argument: 'self'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; MyClass.ex_method()</b>
+<b>Traceback (most recent call last):</b>
+  <b>File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</b>
+<b>TypeError: ex_method() missing 1 required positional argument: 'self'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-m = MyClass()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-m.ex_method()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">method</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; m = MyClass()</b>
+<b>&gt;&gt;&gt; m.ex_method()</b>
+<b>method</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -452,53 +395,28 @@ establece el ancho y alto del rectángulo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Rectangle:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __new__(cls, *args, **kwargs):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Hello from __new__&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return super().__new__(cls)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __new__(cls, *args, **kwargs):</b>
+        <b>print(&quot;Hello from __new__&quot;)</b>
+        <b>return super().__new__(cls)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Hello from __init__&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height):</b>
+        <b>print(&quot;Hello from __init__&quot;)</b>
+        <b>self.width = width</b>
+        <b>self.height = height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Hello
-from __new__</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Hello
-from __init__</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect = Rectangle(10, 20)</b>
+<b>Hello from __new__</b>
+<b>Hello from __init__</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.width</b>
+<b>10</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.height</b>
+<b>20</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -517,25 +435,15 @@ de él:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Rectangle:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height):</b>
+        <b>self.width = width</b>
+        <b>self.height = height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.width * self.height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return self.width * self.height</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	En la
@@ -578,53 +486,27 @@ apropiados a la clase <i><b>Rectangle</b></i>:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Rectangle:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self._width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self._height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height):</b>
+        <b>self._width = width</b>
+        <b>self._height = height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def get_width(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self._width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def get_width(self):</b>
+        <b>return self._width</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def set_width(self, w):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self._width = w</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def set_width(self, w):</b>
+        <b>self._width = w</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def get_height(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self._height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def get_height(self):</b>
+        <b>return self._height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def set_height(self, h):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self._height = h</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def set_height(self, h):</b>
+        <b>self._height = h</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self._width * self._height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return self._width * self._height</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	El ejemplo anterior
@@ -634,21 +516,14 @@ utiliza métodos especiales para acceder a <i><b>_width</b></i> y
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect = Rectangle(10, 20)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.get_width()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.get_width()</b>
+<b>10</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect._width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect._width</b>
+<b>10</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Si un atributo o
@@ -658,53 +533,27 @@ clase <i><b>Rectangle</b></i>:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Rectangle:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height):</b>
+        <b>self.__width = width</b>
+        <b>self.__height = height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def get_width(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def get_width(self):</b>
+        <b>return self.__width</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def set_width(self, w):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__width = w</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def set_width(self, w):</b>
+        <b>self.__width = w</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def get_height(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def get_height(self):</b>
+        <b>return self.__height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def set_height(self, h):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__height = h</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def set_height(self, h):</b>
+        <b>self.__height = h</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width * self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return self.__width * self.__height</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Intentar acceder a
@@ -713,26 +562,16 @@ necesitarás trabajar con <i><b>get_width()</b></i>:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect = Rectangle(10, 20)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.__width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
-(most recent call last):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
- File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">AttributeError:
-'Rectangle' object has no attribute '__width'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.__width</b>
+<b>Traceback (most recent call last):</b>
+  <b>File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</b>
+<b>AttributeError: 'Rectangle' object has no attribute '__width'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.get_width()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.get_width()</b>
+<b>10</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Pero, de hecho,
@@ -741,21 +580,14 @@ externo: <i><b>_Rectangle__width</b></i>:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect._Rectangle__width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect._Rectangle__width</b>
+<b>10</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect._Rectangle__width = 20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect._Rectangle__width = 20</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.get_width()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.get_width()</b>
+<b>20</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -783,73 +615,37 @@ clase <i><b>Rectangle</b></i> usando propiedades:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Rectangle:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height):</b>
+        <b>self.__width = width</b>
+        <b>self.__height = height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def width(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@property</b>
+    <b>def width(self):</b>
+        <b>return self.__width</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @width.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def width(self, w):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       if w &gt; 0:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           self.__width = w</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       else:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           raise ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@width.setter</b>
+    <b>def width(self, w):</b>
+        <b>if w &gt; 0:</b>
+            <b>self.__width = w</b>
+        <b>else:</b>
+            <b>raise ValueError</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def height(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@property</b>
+    <b>def height(self):</b>
+        <b>return self.__height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @height.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def height(self, h):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       if h &gt; 0:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           self.__height = h</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       else:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           raise ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@height.setter</b>
+    <b>def height(self, h):</b>
+        <b>if h &gt; 0:</b>
+            <b>self.__height = h</b>
+        <b>else:</b>
+            <b>raise ValueError</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width * self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return self.__width * self.__height</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Ahora puedes
@@ -858,21 +654,14 @@ fueran atributos:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect = Rectangle(10, 20)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.width</b>
+<b>10</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.height</b>
+<b>20</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	No solo puede leer,
@@ -880,26 +669,16 @@ sino también establecer nuevos valores para las propiedades:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width = 50</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect.width = 50</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">50</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.width</b>
+<b>50</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.height = 70</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.height = 70</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">70</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.height</b>
+<b>70</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Si notó: en el
@@ -909,21 +688,14 @@ entrada, si el valor es menor que cero, se generará una excepción
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width = -10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Traceback
-(most recent call last):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
- File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
- File &quot;test.py&quot;, line 28, in width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   raise ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect.width = -10</b>
+<b>Traceback (most recent call last):</b>
+  <b>File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</b>
+  <b>File &quot;test.py&quot;, line 28, in width</b>
+    <b>raise ValueError</b>
+<b>ValueError</b>
+</pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <h2 class="western">Herencia</h2>
@@ -946,10 +718,8 @@ crear una clase con su padre se ve así:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-class_name(parent_class_name_1, [parent_class_name_2,…,
-parent_class_name_n])</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class class_name(parent_class_name_1, [parent_class_name_2,…, parent_class_name_n])</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Reelaboremos
@@ -957,123 +727,63 @@ nuestro ejemplo para que incluya la herencia:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Figure:</font></p>
+<pre class="western"><b>class Figure:</b>
+
+    <b>def __init__(self, color):</b>
+        <b>self.__color = color</b>
+
+    <b>@property</b>
+    <b>def color(self):</b>
+        <b>return self.__color</b>
+
+    <b>@color.setter</b>
+    <b>def color(self, c):</b>
+        <b>self.__color = c</b>
+
+
+<b>class Rectangle(Figure): </b>
+
+    <b>def __init__(self, width, height, color):</b>
+        <b>super().__init__(color)</b>
+        <b>self.__width = width</b>
+        <b>self.__height = height</b>
+
+    <b>@property</b>
+    <b>def width(self):</b>
+        <b>return self.__width</b>
+
+    <b>@width.setter</b>
+    <b>def width(self, w):</b>
+        <b>if w &gt; 0:</b>
+            <b>self.__width = w</b>
+        <b>else:</b>
+            <b>raise ValueError</b>
+
+    <b>@property</b>
+    <b>def height(self):</b>
+        <b>return self.__height</b>
+
+    <b>@height.setter</b>
+    <b>def height(self, h):</b>
+        <b>if h &gt; 0:</b>
+            <b>self.__height = h</b>
+        <b>else:</b>
+            <b>raise ValueError </b>
+
+    <b>def area(self):</b>
+        <b>return self.__width * self.__height</b>
+</pre><p style="line-height: 100%; margin-bottom: 0cm">
+	La clase principal es Figura, que cuando se inicializa toma el color
+de la figura y lo proporciona a través de propiedades. Rectángulo
+es una clase derivada de Figura. Presta atención a su método
+<i><b>__init__</b></i>: lo primero que hace es llamar al constructor
+(aunque esto no es del todo cierto, pero digámoslo así) de su clase
+padre:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, color):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__color = color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def color(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @color.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def color(self, c):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__color = c</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle(Figure): </font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height, color):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       super().__init__(color)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def width(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @width.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def width(self, w):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       if w &gt; 0:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           self.__width = w</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       else:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           raise ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def height(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @height.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def height(self, h):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       if h &gt; 0:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           self.__height = h</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       else:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           raise ValueError </font>
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width * self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm">	La clase principal
-es Figura, que cuando se inicializa toma el color de la figura y lo
-proporciona a través de propiedades. Rectángulo es una clase
-derivada de Figura. Presta atención a su método <i><b>__init__</b></i>:
-lo primero que hace es llamar al constructor (aunque esto no es del
-todo cierto, pero digámoslo así) de su clase padre:</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
-
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">super().__init__(color)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>super().__init__(color)</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	super es una
@@ -1088,38 +798,22 @@ las ya conocidas propiedades de ancho y alto, un objeto de la clase
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20, &quot;green&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; rect = Rectangle(10, 20, &quot;green&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.width</b>
+<b>10</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.height</b>
+<b>20</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'green'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.color</b>
+<b>'green'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.color = &quot;red&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.color = &quot;red&quot;</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'red'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.color</b>
+<b>'red'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -1140,132 +834,63 @@ en la clase <i><b>Rectangle</b></i>, agregándole datos adicionales:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Figure:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Figure:</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, color):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__color = color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, color):</b>
+        <b>self.__color = color</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def color(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__color</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@property</b>
+    <b>def color(self):</b>
+        <b>return self.__color</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @color.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def color(self, c):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__color = c</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@color.setter</b>
+    <b>def color(self, c):</b>
+        <b>self.__color = c</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def info(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-      print(&quot;Figure&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-      print(&quot;Color: &quot; + self.__color)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def info(self):</b>
+       <b>print(&quot;Figure&quot;)</b>
+       <b>print(&quot;Color: &quot; + self.__color)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Rectangle(Figure):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>class Rectangle(Figure):</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, width, height, color):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       super().__init__(color)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__width = width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.__height = height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __init__(self, width, height, color):</b>
+        <b>super().__init__(color)</b>
+        <b>self.__width = width</b>
+        <b>self.__height = height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def width(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@property</b>
+    <b>def width(self):</b>
+        <b>return self.__width</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @width.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def width(self, w):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       if w &gt; 0:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           self.__width = w</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       else:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           raise ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@width.setter</b>
+    <b>def width(self, w):</b>
+        <b>if w &gt; 0:</b>
+            <b>self.__width = w</b>
+        <b>else:</b>
+            <b>raise ValueError</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @property</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def height(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@property</b>
+    <b>def height(self):</b>
+        <b>return self.__height</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   @height.setter</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def height(self, h):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       if h &gt; 0:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           self.__height = h</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       else:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-           raise ValueError</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>@height.setter</b>
+    <b>def height(self, h):</b>
+        <b>if h &gt; 0:</b>
+            <b>self.__height = h</b>
+        <b>else:</b>
+            <b>raise ValueError</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def info(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Rectangle&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Color: &quot; + self.color)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Width: &quot; + str(self.width))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Height: &quot; + str(self.height))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Area: &quot; + str(self.area()))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def info(self):</b>
+        <b>print(&quot;Rectangle&quot;)</b>
+        <b>print(&quot;Color: &quot; + self.color)</b>
+        <b>print(&quot;Width: &quot; + str(self.width))</b>
+        <b>print(&quot;Height: &quot; + str(self.height))</b>
+        <b>print(&quot;Area: &quot; + str(self.area()))</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.__width * self.__height</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return self.__width * self.__height</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Vamos a ver cómo
@@ -1273,36 +898,21 @@ funciona</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-fig = Figure(&quot;orange&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; fig = Figure(&quot;orange&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-fig.info()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Figure</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Color:
-orange</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; fig.info()</b>
+<b>Figure</b>
+<b>Color: orange</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect = Rectangle(10, 20, &quot;green&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect = Rectangle(10, 20, &quot;green&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-rect.info()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Rectangle</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Color:
-green</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Width:
-10</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Height:
-20</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Area:
-200</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; rect.info()</b>
+<b>Rectangle</b>
+<b>Color: green</b>
+<b>Width: 10</b>
+<b>Height: 20</b>
+<b>Area: 200</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Por tanto, la clase
@@ -1999,9 +1609,8 @@ el siguiente formato:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'{&quot;name&quot;:&quot;John&quot;,
-&quot;age&quot;:30}'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>'{&quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30}'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -2369,13 +1978,10 @@ datos entero, el operador + se utiliza para sumar los operandos.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">num1
-= 1</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">num2
-= 2</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(num1
-+ num2)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>num1 = 1</b>
+<b>num2 = 2</b>
+<b>print(num1 + num2)</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Entonces el
@@ -2388,13 +1994,10 @@ el operador + para cadenas se utiliza para la concatenación.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">str1
-= &quot;Python&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">str2
-= &quot;Programming&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(str1+&quot;
-&quot;+str2)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>str1 = &quot;Python&quot;</b>
+<b>str2 = &quot;Programming&quot;</b>
+<b>print(str1+&quot; &quot;+str2)</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	El resultado será
@@ -2435,22 +2038,20 @@ como ejemplo</h3>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(len(&quot;Programiz&quot;))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(len([&quot;Python&quot;,
-&quot;Java&quot;, &quot;C&quot;]))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(len({&quot;Name&quot;:
-&quot;John&quot;, &quot;Address&quot;: &quot;Nepal&quot;}))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>print(len(&quot;Programiz&quot;))</b>
+<b>print(len([&quot;Python&quot;, &quot;Java&quot;, &quot;C&quot;]))</b>
+<b>print(len({&quot;Name&quot;: &quot;John&quot;, &quot;Address&quot;: &quot;Nepal&quot;}))</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">Output:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">9</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">3</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">2</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>9</b>
+<b>3</b>
+<b>2</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Aquí podemos ver
@@ -2493,95 +2094,51 @@ con el que estamos trabajando. Veamos un ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Cat:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, name, age):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.name = name</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.age = age</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>class Cat:</b>
+    <b>def __init__(self, name, age):</b>
+        <b>self.name = name</b>
+        <b>self.age = age</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def info(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(f&quot;I am a cat. My name is {self.name}. I am
-{self.age} years old.&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def info(self):</b>
+        <b>print(f&quot;I am a cat. My name is {self.name}. I am {self.age} years old.&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def make_sound(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Meow&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def make_sound(self):</b>
+        <b>print(&quot;Meow&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Dog:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, name, age):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.name = name</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.age = age</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>class Dog:</b>
+    <b>def __init__(self, name, age):</b>
+        <b>self.name = name</b>
+        <b>self.age = age</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def info(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(f&quot;I am a dog. My name is {self.name}. I am
-{self.age} years old.&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def info(self):</b>
+        <b>print(f&quot;I am a dog. My name is {self.name}. I am {self.age} years old.&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def make_sound(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(&quot;Bark&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def make_sound(self):</b>
+        <b>print(&quot;Bark&quot;)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">cat1
-= Cat(&quot;Kitty&quot;, 2.5)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">dog1
-= Dog(&quot;Fluffy&quot;, 4)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>cat1 = Cat(&quot;Kitty&quot;, 2.5)</b>
+<b>dog1 = Dog(&quot;Fluffy&quot;, 4)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">for
-animal in (cat1, dog1):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   animal.make_sound()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   animal.info()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   animal.make_sound()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>for animal in (cat1, dog1):</b>
+    <b>animal.make_sound()</b>
+    <b>animal.info()</b>
+    <b>animal.make_sound()</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">Output:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Meow</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">I
-am a cat. My name is Kitty. I am 2.5 years old.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Meow</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Bark</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">I
-am a dog. My name is Fluffy. I am 4 years old.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Bark</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>Meow</b>
+<b>I am a cat. My name is Kitty. I am 2.5 years old.</b>
+<b>Meow</b>
+<b>Bark</b>
+<b>I am a dog. My name is Fluffy. I am 4 years old.</b>
+<b>Bark</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Aquí hemos creado
@@ -2632,118 +2189,62 @@ el mismo nombre que en la clase principal.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">from
-math import pi</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>from math import pi</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Shape:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, name):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.name = name</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>class Shape:</b>
+    <b>def __init__(self, name):</b>
+        <b>self.name = name</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       pass</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>pass</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def fact(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return &quot;I am a two-dimensional shape.&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def fact(self):</b>
+        <b>return &quot;I am a two-dimensional shape.&quot;</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __str__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.name</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def __str__(self):</b>
+        <b>return self.name</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Square(Shape):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, length):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       super().__init__(&quot;Square&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.length = length</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>class Square(Shape):</b>
+    <b>def __init__(self, length):</b>
+        <b>super().__init__(&quot;Square&quot;)</b>
+        <b>self.length = length</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return self.length**2</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return self.length**2</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def fact(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return &quot;Squares have each angle equal to 90 degrees.&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def fact(self):</b>
+        <b>return &quot;Squares have each angle equal to 90 degrees.&quot;</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">class
-Circle(Shape):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def __init__(self, radius):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       super().__init__(&quot;Circle&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       self.radius = radius</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>class Circle(Shape):</b>
+    <b>def __init__(self, radius):</b>
+        <b>super().__init__(&quot;Circle&quot;)</b>
+        <b>self.radius = radius</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def area(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return pi*self.radius**2</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+    <b>def area(self):</b>
+        <b>return pi*self.radius**2</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">a
-= Square(4)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">b
-= Circle(7)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(b)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(b.fact())</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(a.fact())</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">print(b.area())</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>a = Square(4)</b>
+<b>b = Circle(7)</b>
+<b>print(b)</b>
+<b>print(b.fact())</b>
+<b>print(a.fact())</b>
+<b>print(b.area())</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">Output:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Circle</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">I
-am a two-dimensional shape.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">Squares
-have each angle equal to 90 degrees.</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">153.93804002589985</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>Circle</b>
+<b>I am a two-dimensional shape.</b>
+<b>Squares have each angle equal to 90 degrees.</b>
+<b>153.93804002589985</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Aquí podemos ver
@@ -2842,18 +2343,13 @@ método está destinado a este último. Por ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-class Test:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    def __repr__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        return &quot;&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-Test()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-''</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class Test:</b>
+<b>&gt;&gt;&gt;     def __repr__(self):</b>
+<b>&gt;&gt;&gt;         return &quot;&quot;</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; Test()</b>
+<b>... ''</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__str__(self)</b></i>
@@ -2862,20 +2358,14 @@ devuelve un objeto de cadena. Por ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-class Test:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    def __str__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        return &quot;Hello World&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-test = Test()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-str(test)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'Hello World'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class Test:</b>
+<b>&gt;&gt;&gt;     def __str__(self):</b>
+<b>&gt;&gt;&gt;         return &quot;Hello World&quot;</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; test = Test()</b>
+<b>&gt;&gt;&gt; str(test)</b>
+<b>... 'Hello World'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__bytes__(self)</b></i>
@@ -2951,24 +2441,17 @@ ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-class Test:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    def __bool__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        return True</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-test = Test()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-if test:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-   print(&quot;Hello World&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'Hello World'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class Test:</b>
+<b>&gt;&gt;&gt;     def __bool__(self):</b>
+<b>&gt;&gt;&gt;         return True</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; test = Test()</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; if test:</b>
+<b>&gt;&gt;&gt;    print(&quot;Hello World&quot;)</b>
+<b>&gt;&gt;&gt;</b>
+<b>... 'Hello World'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -3036,27 +2519,18 @@ dada. Por ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-list_object = [1, 2, 3, 4, 5]</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-print(list_object[0])</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-1</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-string_object = &quot;hello world&quot;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-print(string_object[0:5])</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'hello'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-dict_object = {&quot;key0&quot;: True, &quot;key1&quot;: False}</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-print(dict_object[&quot;key0&quot;])</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-True</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; list_object = [1, 2, 3, 4, 5]</b>
+<b>&gt;&gt;&gt; print(list_object[0])</b>
+<b>... 1</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; string_object = &quot;hello world&quot;</b>
+<b>&gt;&gt;&gt; print(string_object[0:5])</b>
+<b>... 'hello'</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; dict_object = {&quot;key0&quot;: True, &quot;key1&quot;: False}</b>
+<b>&gt;&gt;&gt; print(dict_object[&quot;key0&quot;])</b>
+<b>... True</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__setitem__(self,
@@ -3066,24 +2540,16 @@ elemento de la secuencia. También puede generar excepciones
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-list_object = [1, 2, 3, 4, 5]</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-list_object[0] = 78</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-print(list_object)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-[78, 2, 3, 4, 5]</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-dict_object = {&quot;key0&quot;: True, &quot;key1&quot;: False}</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-dict_object[&quot;key0&quot;] = False</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-print(dict_object)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-{&quot;key0&quot;: False, &quot;key1&quot;: False}</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; list_object = [1, 2, 3, 4, 5]</b>
+<b>&gt;&gt;&gt; list_object[0] = 78</b>
+<b>&gt;&gt;&gt; print(list_object)</b>
+<b>... [78, 2, 3, 4, 5]</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; dict_object = {&quot;key0&quot;: True, &quot;key1&quot;: False}</b>
+<b>&gt;&gt;&gt; dict_object[&quot;key0&quot;] = False</b>
+<b>&gt;&gt;&gt; print(dict_object)</b>
+<b>... {&quot;key0&quot;: False, &quot;key1&quot;: False}</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__delitem__(self,
@@ -3105,24 +2571,16 @@ bucle:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-class Test:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    def __iter__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        return (1, 2, 3)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-for value in Test():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    print(value)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-1</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-2</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-3</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class Test:</b>
+<b>&gt;&gt;&gt;     def __iter__(self):</b>
+<b>&gt;&gt;&gt;         return (1, 2, 3)</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; for value in Test():</b>
+<b>&gt;&gt;&gt;     print(value)</b>
+<b>... 1</b>
+<b>... 2</b>
+<b>... 3</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__reversed__(self)</b></i>
@@ -3498,25 +2956,16 @@ comporte como una función normal. Por ejemplo:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt; class Test:</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt;     def __call__(self, message):</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt;         print(message)</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt;         return True</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt; test = Test()</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">&gt;&gt;&gt; test(&quot;Hello World&quot;)</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">... 'Hello World'</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">... True</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class Test:</b>
+<b>&gt;&gt;&gt;     def __call__(self, message):</b>
+<b>&gt;&gt;&gt;         print(message)</b>
+<b>&gt;&gt;&gt;         return True</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; test = Test()</b>
+<b>&gt;&gt;&gt; test(&quot;Hello World&quot;)</b>
+<b>... 'Hello World'</b>
+<b>... True</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__await__(self)</b></i>:
@@ -3558,30 +3007,20 @@ se establecerán en <i><b>None</b></i>.</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-class ContextManager:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    def __enter__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        log(&quot;entering context&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    def __exit__(self, exc_type, exc_value, traceback):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        log(&quot;exiting context&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-with ContextManager():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-    print(&quot;in context manager&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'entering context'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'in context manager'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'exiting context'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class ContextManager:</b>
+<b>&gt;&gt;&gt;     def __enter__(self):</b>
+<b>&gt;&gt;&gt;         log(&quot;entering context&quot;)</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt;     def __exit__(self, exc_type, exc_value, traceback):</b>
+<b>&gt;&gt;&gt;         log(&quot;exiting context&quot;)</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; with ContextManager():</b>
+<b>...     print(&quot;in context manager&quot;)</b>
+<b>...</b>
+<b>... 'entering context'</b>
+<b>... 'in context manager'</b>
+<b>... 'exiting context'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><i><b>__aenter__(self)</b></i>
@@ -3597,30 +3036,20 @@ obtener usando <i><b>await</b></i>)</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-class AsyncContextManager:</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    async def __aenter__(self):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        await log(&quot;entering context&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-    async def __aexit__(self, exc_type, exc_value, traceback):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-        await log(&quot;exiting context&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-async with AsyncContextManager():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-    print(&quot;in context manager&quot;)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'entering context'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'in context manager'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">...
-'exiting context'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; class AsyncContextManager:</b>
+<b>&gt;&gt;&gt;     async def __aenter__(self):</b>
+<b>&gt;&gt;&gt;         await log(&quot;entering context&quot;)</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt;     async def __aexit__(self, exc_type, exc_value, traceback):</b>
+<b>&gt;&gt;&gt;         await log(&quot;exiting context&quot;)</b>
+<b>&gt;&gt;&gt;</b>
+<b>&gt;&gt;&gt; async with AsyncContextManager():</b>
+<b>...     print(&quot;in context manager&quot;)</b>
+<b>...</b>
+<b>... 'entering context'</b>
+<b>... 'in context manager'</b>
+<b>... 'exiting context'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
@@ -3820,11 +3249,9 @@ simple que puedes escribir:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-null_decorator(func):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return func</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>def null_decorator(func):</b>
+    <b>return func</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Como puede ver,
@@ -3838,22 +3265,14 @@ decorar (o envolver) otra función:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-greet():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return 'Hello!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>def greet():</b>
+    <b>return 'Hello!'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">greet
-= null_decorator(greet)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>greet = null_decorator(greet)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-greet()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'Hello!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; greet()</b>
+<b>'Hello!'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	En este ejemplo,
@@ -3874,18 +3293,13 @@ solo paso:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@null_decorator</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-greet():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return 'Hello!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>@null_decorator</b>
+<b>def greet():</b>
+    <b>return 'Hello!'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-greet()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'Hello!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; greet()</b>
+<b>'Hello!'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Colocar líneas
@@ -3925,20 +3339,13 @@ función decorada a letras mayúsculas:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">def uppercase(func):</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">    def wrapper():</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">        original_result = func()</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">        modified_result =
-original_result.upper()</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">        return modified_result</font></p>
-<p style="font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">    return wrapper</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>def uppercase(func):</b>
+    <b>def wrapper():</b>
+        <b>original_result = func()</b>
+        <b>modified_result = original_result.upper()</b>
+        <b>return modified_result</b>
+    <b>return wrapper</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	En lugar de
@@ -3972,18 +3379,13 @@ decoras la función de <i><b>greet</b></i> original con él?</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@uppercase</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-greet():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return 'Hello!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>@uppercase</b>
+<b>def greet():</b>
+    <b>return 'Hello!'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-greet()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'HELLO!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; greet()</b>
+<b>'HELLO!'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Espero que este
@@ -3994,25 +3396,15 @@ diferente cuando decora una función:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-greet</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&lt;function
-greet at 0x10e9f0950&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; greet</b>
+<b>&lt;function greet at 0x10e9f0950&gt;</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-null_decorator(greet)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&lt;function
-greet at 0x10e9f0950&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; null_decorator(greet)</b>
+<b>&lt;function greet at 0x10e9f0950&gt;</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-uppercase(greet)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&lt;function
-uppercase.&lt;locals&gt;.wrapper at 0x10da02f28&gt;</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; uppercase(greet)</b>
+<b>&lt;function uppercase.&lt;locals&gt;.wrapper at 0x10da02f28&gt;</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Como vio
@@ -4071,28 +3463,16 @@ aplica varios decoradores:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">def strong(func):</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">    def wrapper():</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">        return '&lt;strong&gt;' + func() +
-'&lt;/strong&gt;'</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">    return wrapper</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<br/>
+<pre class="western"><b>def strong(func):</b>
+    <b>def wrapper():</b>
+        <b>return '&lt;strong&gt;' + func() + '&lt;/strong&gt;'</b>
+    <b>return wrapper</b>
 
-</p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">def emphasis(func):</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">    def wrapper():</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">        return '&lt;em&gt;' + func() + '&lt;/em&gt;'</font></p>
-<p style="font-style: normal; font-weight: normal; line-height: 100%; margin-bottom: 0cm">
-<font color="#c9211e">    return wrapper</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>def emphasis(func):</b>
+    <b>def wrapper():</b>
+        <b>return '&lt;em&gt;' + func() + '&lt;/em&gt;'</b>
+    <b>return wrapper</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Ahora tomemos estos
@@ -4103,13 +3483,11 @@ función:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@strong</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@emphasis</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-greet():</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return 'Hello!'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>@strong</b>
+<b>@emphasis</b>
+<b>def greet():</b>
+    <b>return 'Hello!'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	¿Qué resultado
@@ -4119,10 +3497,9 @@ Esto es lo que sucede cuando llamas a una función decorada:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-greet()</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'&lt;strong&gt;&lt;em&gt;Hello!&lt;/em&gt;&lt;/strong&gt;'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>&gt;&gt;&gt; greet()</b>
+<b>'&lt;strong&gt;&lt;em&gt;Hello!&lt;/em&gt;&lt;/strong&gt;'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Aquí se puede ver
@@ -4147,9 +3524,8 @@ la cadena de llamadas a funciones de decorador se verá así:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">decorated_greet
-= strong(emphasis(greet))</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>decorated_greet = strong(emphasis(greet))</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Aquí nuevamente
@@ -4197,15 +3573,11 @@ aprovecha esta característica:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-proxy(func):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def wrapper(*args, **kwargs):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return func(*args, **kwargs)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return wrapper</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>def proxy(func):</b>
+    <b>def wrapper(*args, **kwargs):</b>
+        <b>return func(*args, **kwargs)</b>
+    <b>return wrapper</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Hay dos cosas
@@ -4232,34 +3604,19 @@ ejecuta:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-trace(func):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   def wrapper(*args, **kwargs):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(f'TRACE: calling {func.__name__}() '</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-             f'with {args}, {kwargs}')</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>def trace(func):</b>
+    <b>def wrapper(*args, **kwargs):</b>
+        <b>print(f'TRACE: calling {func.__name__}() '</b>
+              <b>f'with {args}, {kwargs}')</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       original_result = func(*args, **kwargs)</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+        <b>original_result = func(*args, **kwargs)</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       print(f'TRACE: {func.__name__}() '</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-             f'returned {original_result!r}')</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+        <b>print(f'TRACE: {func.__name__}() '</b>
+              <b>f'returned {original_result!r}')</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-       return original_result</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return wrapper</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+        <b>return original_result</b>
+    <b>return wrapper</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm">	Al decorar una
@@ -4270,23 +3627,15 @@ necesidad será una gran ayuda para la depuración:</p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
 
 </p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">@trace</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">def
-say(name, line):</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">
-   return f'{name}: {line}'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<pre class="western"><b>@trace</b>
+<b>def say(name, line):</b>
+    <b>return f'{name}: {line}'</b>
 
-</p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">&gt;&gt;&gt;
-say('Jane', 'Hello, World')</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'TRACE:
-calling say() with (&quot;Jane&quot;, &quot;Hello, World&quot;), {}'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'TRACE:
-say() returned &quot;Jane: Hello, World&quot;'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><font color="#c9211e">'Jane:
-Hello, World'</font></p>
-<p style="line-height: 100%; margin-bottom: 0cm"><br/>
+<b>&gt;&gt;&gt; say('Jane', 'Hello, World')</b>
+<b>'TRACE: calling say() with (&quot;Jane&quot;, &quot;Hello, World&quot;), {}'</b>
+<b>'TRACE: say() returned &quot;Jane: Hello, World&quot;'</b>
+<b>'Jane: Hello, World'</b></pre><p style="line-height: 100%; margin-bottom: 0cm">
+<br/>
 
 </p>
 <p style="line-height: 100%; margin-bottom: 0cm"><br/>
